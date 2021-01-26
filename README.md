@@ -1,7 +1,7 @@
 > If you are following the HackYourFuture curriculum we recommend you to start with module 1: [HTML/CSS/GIT](https://github.com/HackYourFuture/HTML-CSS). To get a complete overview of the HackYourFuture curriculum first, click [here](https://github.com/HackYourFuture/curriculum).
 
 > Please help us improve and share your feedback! If you find better tutorials
-> or links, please share them by [opening a pull request](https://github.com/HackYourFuture/JavaScript1/pulls).
+> or links, please share them by [opening a pull request](https://github.com/HackYourFuture/JavaScript/pulls).
 
 # Module #2 - JavaScript
 
