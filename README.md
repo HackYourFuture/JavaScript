@@ -89,7 +89,7 @@ To have a more detailed overview of the guidelines, please read [this document](
 | Week | Topic                                                      | Reading Materials                                                                       | Homework                                                                                 |
 | ---- | ---------------------------------------------------------- | --------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- |
 | 1.   | Variables, Variable Types, Operators, Objects, Arrays                  | [Reading W1](/Week1/README.md) | [Homework W1](/Week1/MAKEME.md) |
-| 2.   | Loops, Control Flow, If/Else, Incremental coding                       | [Reading W2](/Week2/README.md) | [Homework W2](/Week2/MAKEME.md) |
+| 2.   | Loops, Control Flow, If/Else,                                          | [Reading W2](/Week2/README.md) | [Homework W2](/Week2/MAKEME.md) |
 | 3.   | Functions, Scope, DRY principle                                        | [Reading W3](/Week3/README.md) | [Homework W3](/Week3/MAKEME.md) |
 | 4.   | Higher Order Functions, Array functions, Closures                      | [Reading W4](/Week4/README.md) | [Homework W4](/Week4/MAKEME.md) |
 
