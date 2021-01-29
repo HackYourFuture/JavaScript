@@ -13,4 +13,9 @@ Before we head into the homework exercises, it might be nice to do some interact
 
 ## **2. Homework exercises**
 
- This week we expect you to do the exercises in the corresponding module/week folder (JavaScript / Week 4). Have a look at your class repository on how to hand in the homework. 
+This week we expect you to do the exercises in the corresponding module/week folder (JavaScript / Week 4). Have a look at your class repository on how to hand in the homework. 
+ 
+## Finished?
+
+So you think you are a JavaScript superstar now huh? :wink:
+Have a look at the challenges folder in this repository to try some harder problems. We expect these to be hard, so take your time to try and solve them yourself. If you really can't figure it out then have a look at the solutions, but it usually sticks better if you find the solution yourself.
