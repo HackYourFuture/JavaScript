@@ -14,7 +14,6 @@ These are the topics for week 1.
 3. [What is JavaScript?](https://study.hackyourfuture.net/#/javascript/README)
 4. [What are variables?](https://study.hackyourfuture.net/#/javascript/variables)
    - The keywords: let, const, var
-   - values
 5. [What are values?](https://study.hackyourfuture.net/#/javascript/values)
 6. [Statements vs. Expressions](https://study.hackyourfuture.net/#/javascript/statements-vs-expressions)
 7. [Operators](https://study.hackyourfuture.net/#/javascript/operators)
