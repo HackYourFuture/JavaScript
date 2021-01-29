@@ -6,7 +6,6 @@ These are the topics for week 4:
 
 1. [Higher Order Functions](https://study.hackyourfuture.net/#/javascript/higher-order-functions)
    - Array methods
-   - Arrow functions
 2. [Closures](https://study.hackyourfuture.net/#/javascript/closures)
    - Execution context
    - Why do we need closures?
