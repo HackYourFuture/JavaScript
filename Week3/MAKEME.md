@@ -1,5 +1,4 @@
 # Homework JavaScript Week 3
-# Homework JavaScript Week 3
 
 This will be the first week you are expected to hand in some homework when we combine all of the concepts you have been practicing the last 3 weeks.
 
