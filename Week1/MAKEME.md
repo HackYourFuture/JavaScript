@@ -16,7 +16,6 @@ In the following exercises you'll learn how to use different JavaScript concepts
 - [Learn-js](https://www.learn-js.org/). Do all the `Learn the basics` exercises.
 - [Codecademy: Introduction to JavaScript](https://www.codecademy.com/learn/introduction-to-javascript/modules/learn-javascript-introduction). Do all the exercises (#1 to #10).
 - [jshero.net](https://www.jshero.net/en/success.html). Do the first 5 exercises.
-- [HYF Belgium](https://github.com/HackYourFutureBelgium/debugging/tree/master/isolate). Our friends over at HYF Belgium have made some really nice exercises. Do exercises 00 through 04 of these. You can clone the [repository](https://github.com/HackYourFutureBelgium/debugging) and work on it locally.
 
 The above should give you a nice basis. If you have extra time and are still a little unsure, have a look at the following:
 - [FreeCodeCamp: Introduction to JavaScript](https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/basic-javascript). Do at least 20 exercises, you can choose whichever ones you feel are challenging enough.

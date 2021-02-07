@@ -8,8 +8,6 @@ In this section you will be doing interactive exercises, that will allow you to 
 
 - Do all parts of [Codecademy: Arrays](https://www.codecademy.com/courses/introduction-to-javascript/lessons/arrays) (Signup required!)
 - Do 5 exercises of [FreeCodeCamp: Basic data structures](https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/basic-data-structures)
-- [HYF Belgium](https://github.com/HackYourFutureBelgium/behavior-strategy-implementation/tree/master/isolate/). Our friends over at HYF Belgium have even more great exercises. Do 06, 08-14. You probably already have cloned this from last week, you can use the same one.
-- [HYF Belgium #2](https://github.com/HackYourFutureBelgium/behavior-strategy-implementation/tree/master/isolate). HYF Belgium also has another module that has some exercises. Clone the [behaviour-strategy-implementation module](https://github.com/HackYourFutureBelgium/behavior-strategy-implementation) and do the `01-arrays` exercise.
 - There is a practice-exercises folder in this week's repository that is filled with exercises to try out. The solutions are in a separate folder so you can check if you did it correctly. Clone this repository to your computer and have a go!
 
 ## No homework to hand in
@@ -19,4 +17,3 @@ For the first 2 weeks of JavaScript there is no homework to hand in as the exerc
 ## Done early?
 
 Have a look at some of the week3 concepts already and try to do more exercises in the links above. The first weeks of the JavaScript modules are very important as understanding the basics will make the rest of the curriculum that much easier to follow. So keep reading and writing code!
-
