@@ -12,7 +12,6 @@ This will be the first week you are expected to hand in some homework when we co
 In this section you will be doing interactive exercises that will allow you to practice with the concepts you've learned about this week. In the first course you'll learn about functions, the structure and how they're used. They are a fundamental part of understanding programming and you should become very familiar with them! Do as many of the things in the following list to feel comfortable with the concepts.
 
 - [Codecademy: Functions ](https://www.codecademy.com/courses/introduction-to-javascript/lessons/functions)
-- There is a practice-exercises folder in this week's repository that is filled with exercises to try out. The solutions are in a separate folder so you can check if you did it correctly. Clone this repository to your computer and have a go!
 
 ## **2. Homework exercises**
 
