@@ -10,6 +10,7 @@ These are the topics for week 4:
    - Execution context
    - Why do we need closures?
 3. [Problem solving](https://study.hackyourfuture.net/#/programming/problem-solving-process)
+4. [Continue with Your personal brand](https://github.com/HackYourFuture/yourpersonalbrand)
 
 ## Week goals
 
@@ -18,6 +19,8 @@ This week we are going to keep practicing coding and introducing a few more adva
 Now that we are getting into more and more complex code it is also a good idea to learn a structured way to solve more complex problems. Have a look at the page on problem solving in your study book over [here](https://study.hackyourfuture.net/#/programming/problem-solving-process).
 
 After that it is time to start practicing again, make as many exercises as you can in the list [here](./MAKEME.md) and don't forget to hand in your homework. There will also be a test coming up for this module. What and when will be announced in your class channel, so keep an eye on that as usual! The best way to prepare is to keep programming!
+
+Also, don't forget about the [personal brand repo](https://github.com/HackYourFuture/yourpersonalbrand) if you didn't manage to complete it last week.
 
 ## Finished?
 
