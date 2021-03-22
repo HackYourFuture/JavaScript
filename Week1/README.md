@@ -20,7 +20,7 @@ These are the topics for week 1.
 8. [Debuggers](https://study.hackyourfuture.net/#/tools/debuggers)
 9. Testing code
    - [Assertion](https://study.hackyourfuture.net/#/testing/assertion)
-10. Career training (part 1)
+10. [Career training I (Your Personal Brand)](https://github.com/HackYourFuture/yourpersonalbrand)
 
 ## Week goals
 All of the detailed information about every concept is in your study book. The following goal explanation will link you to the correct place to get studying. Read through the goal description once to get an idea of what you will be learning, then go through the different links (either from the agenda or this goal list).
@@ -33,10 +33,8 @@ To help learn the language we also want to introduce you to some tools that you 
 
 Lastly we want to introduce the first steps to testing code with some code you will find in your exercises. Have a look at what assertion is [here](https://study.hackyourfuture.net/#/testing/assertion), the `console.assert` lines in your practice exercises uses this to check that your code does the right thing.
 
-## Career training (part 1)
-The goal of HYF is to get you a job, not just teach you how to program. That means that we also want to train you into how to present yourself to potential companies.
-
-In this or the next week there will be a mandatory meeting where we will go through what we call `your personal brand`. You do not need to prepare anything for this first meeting, keep an eye on your class channel for what day this meeting will be!
+## Career training I (Your personal brand)
+During this module, you will also learn about the different components that make your personal brand (CV, GitHub, LinkedIn, etc). We have compiled all important info for you in [this repo](https://github.com/HackYourFuture/yourpersonalbrand). Be sure to read the full repo for the Career Training session that will happen in Week 2 of this module and start working on your personal brand which you will have to hand in at the end of JS week 4!
 
 ## Finished?
 
