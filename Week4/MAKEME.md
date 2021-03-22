@@ -4,7 +4,7 @@
 
 1. Practice the concepts
 2. Homework exercises
-3. Fix CV/LinkedIn/Github
+3. Your personal brand
 4. Challenges
 
 ## **1. Practice the concepts**
