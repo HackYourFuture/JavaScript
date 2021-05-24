@@ -34,6 +34,6 @@ EVERY WEEK
 Homework week 1 <Your name>
 ```
 
-7. Submit the pull request from your forked repository branch into the `main` branch
+9. Submit the pull request from your forked repository branch into the `main` branch
 
 If you have any questions or if something is not entirely clear ¯\\\_(ツ)\_/¯, please ask/comment on Slack!
