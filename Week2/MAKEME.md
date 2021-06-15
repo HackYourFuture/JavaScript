@@ -18,4 +18,4 @@ While there’s no homework to be handed in this week, we strongly suggest that 
 
 ## Done early?
 
-Have a look at some of the week3 concepts already and try to do more exercises in the links above. The first weeks of the JavaScript modules are very important as understanding the basics will make the rest of the curriculum that much easier to follow. So keep reading and writing code!
+Try to do more exercises in the links above. The first weeks of the JavaScript modules are very important as understanding the basics will make the rest of the curriculum that much easier to follow. So keep reading and writing code! If you feel up to it, continue on to week 3 as then we bring everything together.
