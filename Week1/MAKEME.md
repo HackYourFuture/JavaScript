@@ -26,9 +26,10 @@ The above should give you a nice basis. If you have extra time and are still a l
 This week you will also get invited to your class repository and get an issue assigned to you. Read through the issue and take the steps to set up your environment for the rest of the curriculum!
 
 ## No homework to hand in
+
 For the first 2 weeks of JavaScript there is no homework to hand in as the exercises already give you all the feedback you need. Go through the first 3 weeks at your own pace, and feel free to ask questions about any of the 3 weeks for the Q&A sessions.
 
 ## Done early?
 
-Have a look at some of the week2 concepts already and try to do more exercises in the links above. The first weeks of the JavaScript modules are very important as understanding the basics will make the rest of the curriculum that much easier to follow. So keep reading and writing code!
+Try to do more exercises in the links above. The first weeks of the JavaScript modules are very important as understanding the basics will make the rest of the curriculum that much easier to follow. So keep reading and writing code! If you are done early, go on to week 2!
 

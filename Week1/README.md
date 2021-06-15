@@ -18,9 +18,7 @@ These are the topics for week 1.
 6. [Statements vs. Expressions](https://study.hackyourfuture.net/#/javascript/statements-vs-expressions)
 7. [Operators](https://study.hackyourfuture.net/#/javascript/operators)
 8. [Debuggers](https://study.hackyourfuture.net/#/tools/debuggers)
-9. Testing code
-   - [Assertion](https://study.hackyourfuture.net/#/testing/assertion)
-10. Career training (part 1)
+9. Career training (part 1)
 
 ## Week goals
 All of the detailed information about every concept is in your study book. The following goal explanation will link you to the correct place to get studying. Read through the goal description once to get an idea of what you will be learning, then go through the different links (either from the agenda or this goal list).
@@ -30,8 +28,6 @@ This week is all about getting you started in the world of JavaScript. For that 
 Time to start learning the language with the first building blocks: variables! Have a look at what variables are [here](https://study.hackyourfuture.net/#/javascript/variables) and what values are [here](https://study.hackyourfuture.net/#/javascript/values). Then let's go over some syntax with the difference between statements and expressions [here](https://study.hackyourfuture.net/#/javascript/statements-vs-expressions). And finally let's look at what we can do with variables and values by using what's called operators. Read about them [here](https://study.hackyourfuture.net/#/javascript/operators).
 
 To help learn the language we also want to introduce you to some tools that you can use to look under the hood of your code in the section about [debuggers](https://study.hackyourfuture.net/#/tools/debuggers). You won't understand everything of what's there yet, but debugging is so important we want you to look at it early. Read through it once and play around a bit in the debugger. We will be telling you to revisit the debugging section over the next few weeks as you start learning more and more about what is possible. 
-
-Lastly we want to introduce the first steps to testing code with some code you will find in your exercises. Have a look at what assertion is [here](https://study.hackyourfuture.net/#/testing/assertion), the `console.assert` lines in your practice exercises uses this to check that your code does the right thing.
 
 ## Career training (part 1)
 The goal of HYF is to get you a job, not just teach you how to program. That means that we also want to train you into how to present yourself to potential companies.
