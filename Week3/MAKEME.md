@@ -16,7 +16,9 @@ In this section you will be doing interactive exercises that will allow you to p
 
 ## **2. Homework exercises**
 
-It is time to combine everything we have learned the past couple of weeks and get some feedback from experienced developers. This will be the first week you are working with the [homework repository](https://github.com/HackYourFuture/Homework/blob/main/README.md) so reserve some time to set it up. *Make sure to read the README in the repository to set up the extensions*. This week we expect you to do the exercises in the corresponding module/week folder (JavaScript / Week 3). Have a look at the [homework guide](https://github.com/HackYourFuture/JavaScript/blob/main/hand-in-homework-guide.md) to see how to hand in your homework.
+It is time to combine everything we have learned the past couple of weeks and get some feedback from experienced developers. This will be the first week you are working with the [homework repository](https://github.com/HackYourFuture/Homework/blob/main/README.md) so reserve some time to set it up. This week we expect you to do the exercises in the corresponding module/week folder (JavaScript / Week 3). Have a look at the [homework guide](https://github.com/HackYourFuture/JavaScript/blob/main/hand-in-homework-guide.md) to see how to hand in your homework.
+
+*NOTE: Make sure to read and apply all of the README in the homework repository to set up the extensions in Visual Studio Code!*. 
 
 ## **3. Your personal brand**
 
