@@ -17,6 +17,8 @@ Before we head into the homework exercises, it might be nice to do some interact
 
 This week we expect you to do the exercises in the corresponding module/week folder (JavaScript / Week 4). Have a look at the [homework guide](https://github.com/HackYourFuture/JavaScript/blob/main/hand-in-homework-guide.md) to see how to hand in your homework.
 
+*NOTE: do NOT forget to checkout the main branch before creating the branch for this week. Otherwise your previous homework will be a part of the PR*
+
 ## **3. Your personal brand**
 
 This week is the deadline to submit your CV with links to your updated GitHub and LinkedIn profiles. To submit your CV, be sure to follow the guidelines given [here](https://github.com/HackYourFuture/yourpersonalbrand/blob/main/yourcurriculum.md#4-submitting-your-cv-to-the-hyf-team). We strongly suggest you make use of the provided templates! They have all the important sections and together with the info in the repo, they will help you end up with a great personal brand, crucial to find an internship or job as a developer.
