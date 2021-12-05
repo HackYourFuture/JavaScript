@@ -20,4 +20,9 @@
 
 // 6. Add a console.log statement that logs the value of numberX
 
-
+let numberX ;
+console.log('I think it has no value yet & is undefined.');
+console.log(numberX);
+numberX = 8 ;
+console.log('Now I think it\'s 8 as we initialized it.');
+console.log(numberX);
