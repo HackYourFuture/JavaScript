@@ -10,3 +10,12 @@
  *   Hola, mundo! // Spanish
  */
 
+console.log('Hello world!');
+console.log('Halo dunia!');
+console.log('ciao mondo!');
+console.log('Hola mundo!');
+console.log('salam donya!');
+console.log('hallo werld!');
+console.log('marhaba dunya!');
+console.log('Hallo Welt!');
+console.log('Salut Lume!');
