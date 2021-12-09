@@ -1,22 +1,23 @@
-"use strict";
+'use strict';
 /**
- * Our state variable says what the traffic light's color is at that moment
+ * The `possibleStates` property define the states (in this case: colours)
+ * in which the traffic light can be.
+ * The `stateIndex` property indicates which of the possible states is current.
  */
 const trafficLight = {
-  possibleStates: ["green", "orange", "red"],
-  currentStateIndex: 0,
+  possibleStates: ['green', 'orange', 'red'],
+  stateIndex: 0,
 };
 
-let rotations = 0;
-while (rotations < 2) {
-  const currentTrafficLightState =
-    trafficLight.possibleStates[trafficLight.currentStateIndex];
-  console.log("The traffic light is on", currentTrafficLightState);
+let cycle = 0;
+while (cycle < 2) {
+  const currentState = trafficLight.possibleStates[trafficLight.stateIndex];
+  console.log('The traffic light is on', currentState);
 
   // TODO
   // if the color is green, turn it orange
   // if the color is orange, turn it red
-  // if the color is red, add 1 to rotations and turn it green
+  // if the color is red, add 1 to cycles and turn it green
 }
 
 /**

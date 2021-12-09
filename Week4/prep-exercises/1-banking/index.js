@@ -22,28 +22,43 @@ const bankAccount = {
     {
       prevAmount: 350,
       newAmount: 250,
-      reason: "Donation",
+      reason: 'Donation',
     },
   ],
 };
-const donateMoney = (amount, onSuccess, onFail) => {};
-const payRent = (amount, onSuccess, onFail) => {};
+
+const donateMoney = (amount, onSuccess, onFail) => {
+  // TODO complete this function
+};
+const payRent = (amount, onSuccess, onFail) => {
+  // TODO complete this function
+};
 
 /**
  * TEST CODE. DO NOT EDIT
  */
 
-const onSuccess = () => {
-  console.log("Payment successful! Thank you!");
+const onSuccessEnglish = () => {
+  console.log('Payment successful! Thank you!');
 };
-const onFail = () => {
-  console.log("You do not have enough money to make this payment.");
+const onFailEnglish = () => {
+  console.log('You do not have enough money to make this payment.');
 };
-donateMoney(100, onSuccess, onFail);
+
+const onSuccessDutch = () => {
+  console.log('Betaling geslaagd! Dank u!');
+};
+const onFailDutch = () => {
+  console.log('U heeft niet voldoende saldo om deze betaling te doen.');
+};
+
+donateMoney(100, onSuccessEnglish, onFailEnglish);
 console.log(bankAccount);
-payRent(100, onSuccess, onFail);
+
+payRent(100, onSuccessEnglish, onFailEnglish);
 console.log(bankAccount);
-donateMoney(100, onSuccess, onFail);
+
+donateMoney(100, onSuccessDutch, onFailDutch);
 console.log(bankAccount);
 
 /**
@@ -66,7 +81,7 @@ transactions: [
   { prevAmount: 150, newAmount: 50, reason: 'Rent' }
 ]
 }
-You do not have enough money to make this payment.
+U heeft niet voldoende saldo om deze betaling te doen.
 {
 currentBalance: 50,
 transactions: [
