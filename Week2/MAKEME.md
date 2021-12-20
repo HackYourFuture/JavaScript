@@ -2,24 +2,13 @@
 
 Practice, practice, practice. Same as week 1, you are not handing in any homework, but are going to practice as much javascript as you can. Play around with the exercises mentioned below, remember that you can copy the code into [jsTutor](http://pythontutor.com/javascript.html#mode=edit) to step through the code, or look at it in the debugger in the browser/vscode.
 
-## **Todo list **
-
-1. Practice the concepts
-2. Prep exercises
-
-## **1. Practice the concepts**
+## Practice the concepts
 
 In this section you will be doing interactive exercises, that will allow you to practice with the concepts you've learned about this week! Do as many as you need to feel comfortable with the concepts.
 
 - Do all parts of [Codecademy: Arrays](https://www.codecademy.com/courses/introduction-to-javascript/lessons/arrays) (Signup required!)
 - Do 5 exercises of [FreeCodeCamp: Basic data structures](https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/basic-data-structures)
 - There is a practice-exercises folder in this week's repository that is filled with exercises to try out. The solutions are in a separate folder so you can check if you did it correctly. Clone this repository to your computer and have a go!
-
-## **2. Prep exercises**
-
-> Prep exercises are exercises that you should work on _before_ the session on Sunday. These are a little more difficult or show an important concept and as such are a great exercise to talk about with your class and your Q&A mentor. Have a solution ready by Sunday as you may be asked to show what you did.
-
-Inside your `JavaScript` fork, go to the folder `Week2`. Inside of that folder, navigate to `/prep-exercises`. For each exercise, you will find a separate folder. The `README` explains what needs to be done. There will also be some questions at the bottom to think about. Go through them _before_ the session on Sunday as it will be covered then.
 
 ## No homework to hand in (for now)
 
