@@ -1,9 +1,4 @@
-import {
-  modules,
-  students,
-  mentors,
-  classes,
-} from "../../../Week1/prep-exercises/1-objects-and-arrays/hyf";
+import { modules, students, mentors, classes } from "./hyf";
 
 /**
  * Tjebbe would like help to get a list of possible mentors for a module.
