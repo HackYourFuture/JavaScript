@@ -1,9 +1,4 @@
-import {
-  modules,
-  students,
-  mentors,
-  classes,
-} from "../../../Week1/prep-exercises/1-objects-and-arrays/hyf";
+import { modules, students, mentors, classes } from "./hyf";
 
 /**
  * We would like to have a list of everyone that is currently participating in a class.
