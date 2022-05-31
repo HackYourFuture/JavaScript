@@ -2,7 +2,7 @@
 
 Practice, practice, practice. Same as week 1, you are not handing in any homework, but are going to practice as much javascript as you can. Play around with the exercises mentioned below, remember that you can copy the code into [jsTutor](http://pythontutor.com/javascript.html#mode=edit) to step through the code, or look at it in the debugger in the browser/vscode.
 
-## **Todo list **
+## **Todo list**
 
 1. Practice the concepts
 2. Prep exercises
