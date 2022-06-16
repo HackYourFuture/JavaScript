@@ -40,5 +40,7 @@ So you think you are a JavaScript superstar now huh? :wink:
 
 Once you have finished the homework there are a couple of things you can keep doing to improve your JavaScript and problem solving skills. Have a look at the following and come back to them later in the curriculum, it is never bad to do these exercises!
 
-- [Project Euler](https://projecteuler.net/)
-  Project Euler defines problems that you can use your new JavaScript knowledge to find solutions for. These start off doable with the knowledge you have now and will get more and more difficult. You can come back to it later if you get stuck, or ask your classmates! Whenever you have some time or want to practice problem solving this is a good place to go.
+- [JavaScript questions](https://github.com/lydiahallie/javascript-questions/blob/master/README.md) - This is a repo that tests your knowledge of the underlying workings of JavaScript. Try to answer the questions and see how your knowledge matches up.
+- [Code Wars](https://www.codewars.com/) - Code wars is a website where you can solve exercises and rank up! When signing up, only choose JavaScript to really focus the problems on learning to solve problems in it. You can later change it to other technologies when you get more familiar.
+- [JSChallenger](https://www.jschallenger.com/) - JSChallenger is a nice website with a set of challenges for you to solve, from the Basics, to using Dates and Sets. Skip the Javascript DOM section for now, we are going to learn about that in the next module.
+- [Project Euler](https://projecteuler.net/) - Project Euler defines problems that you can use your new JavaScript knowledge to find solutions for. These start off doable with the knowledge you have now and will get more and more difficult. You can come back to it later if you get stuck, or ask your classmates! Whenever you have some time or want to practice problem solving this is a good place to go.
