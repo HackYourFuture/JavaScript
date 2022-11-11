@@ -12,7 +12,8 @@
 
 Before we head into the homework exercises, it might be nice to do some interactive exercises first! In the following resource you'll find some exercises that'll teach you all about higher order and array functions!
 
-- [Learn JavaScript: Iterators](https://www.codecademy.com/learn/introduction-to-javascript/modules/learn-javascript-iterators)
+- [Learn JavaScript: Higher Order Functions](https://www.codecademy.com/courses/introduction-to-javascript/lessons/higher-order-functions/exercises/introduction)
+- [Learn JavaScript: Iterators](https://www.codecademy.com/courses/introduction-to-javascript/lessons/javascript-iterators/exercises/intro)
 
 ## **2. Prep exercises**
 
