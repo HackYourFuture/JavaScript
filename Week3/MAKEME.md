@@ -8,6 +8,7 @@ This will be the first week you are expected to hand in some homework when we co
 2. Prep exercises
 3. Homework exercises
 4. Your personal brand
+5. Practice practice practice
 
 ## **1. Practice the concepts**
 
@@ -30,6 +31,13 @@ _NOTE: Make sure to read and apply all of the README in the homework repository 
 ## **4. Your personal brand**
 
 Remember that next week you have to hand in your CV! If you haven’t started yet, this is the last reminder :)
+
+## **5. Practice practice practice**
+
+Done with the above? Then it is time to practice practice practice! Below you will find huge lists of practice exercises to keep practicing. The better you get at JavaScript, the easier the rest of the curriculum is so try to do as much as you can. Some of these solutions use some of the concepts of next week so if something looks weird, have a quick look at next week's topics to see what it means:
+
+- [W3Resource - JavaScript Functions exercises](https://www.w3resource.com/javascript-exercises/javascript-functions-exercises.php) _(Note that the solutions do not use ES6 syntax, make sure your solution does!)_
+- [W3Resource - JavaScript Fundamental exercises](https://www.w3resource.com/javascript-exercises/fundamental/index.php) 
 
 ## Done early?
 
