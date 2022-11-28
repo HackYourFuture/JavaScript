@@ -6,6 +6,7 @@ Practice, practice, practice. Same as week 1, you are not handing in any homewor
 
 1. Practice the concepts
 2. Prep exercises
+3. Practice practice practice
 
 ## **1. Practice the concepts**
 
@@ -21,11 +22,17 @@ In this section you will be doing interactive exercises, that will allow you to 
 
 Inside your `JavaScript` fork, go to the folder `Week2`. Inside of that folder, navigate to `/prep-exercises`. For each exercise, you will find a separate folder. The `README` explains what needs to be done. There will also be some questions at the bottom to think about. Go through them _before_ the session on Sunday as it will be covered then.
 
+## **3. Practice practice practice**
+
+Done with the above? Then it is time to practice practice practice! Below you will find huge lists of practice exercises to keep practicing. The better you get at JavaScript, the easier the rest of the curriculum is so try to do as much as you can. Some of these solutions use some of the concepts of next week so if something looks weird, have a quick look at next week's topics to see what it means:
+
+- [W3Resource Basic exercises](https://www.w3resource.com/javascript-exercises/javascript-basic-exercises.php) _(Note that the given solutions to these exercises use old JS syntax, we will learn more about this later. Most important now is that we don't use `var` anymore, so make sure you use `let` or `const`!)_
+
 ## No homework to hand in (for now)
 
 For the first 2 weeks of JavaScript there is no homework to hand in as the exercises already give you all the feedback you need. Go through the first 3 weeks at your own pace, and feel free to ask questions about any of the 3 weeks for the Q&A sessions.
 
-While there’s no homework to be handed in this week, we strongly suggest that you start working on your Personal Brand as mentioned in the Career Training session. Keep in mind that the last week of Javascript you will have to hand in your CV so better get started soon!
+While there’s no homework to be handed in this week, we strongly suggest that you start working on your Personal Brand as mentioned in the Career Training session. Keep in mind that the last week of Javascript you will have to hand in your CV and the last two weeks are quite difficult!
 
 ## Done early?
 
