@@ -7,7 +7,7 @@
 
 let myString = 'hello,this,is,a,difficult,to,read,sentence';
 
-
+console.log(myString = myString.replaceAll(',', ' '));
 
 /* --- Code that will test your solution, do NOT change. Write above this line --- */
 

@@ -6,4 +6,6 @@
  *  If it's odd, log to the console The number [PUT_NUMBER_HERE] is odd!.
  *  If it's even, log to the console The number [PUT_NUMBER_HERE] is even!.
  */
-
+for (let i = 0; i <= 20; i++){
+    i % 2 === 0 ? console.log(`the number ${i} is odd`) : console.log(`the number ${i} is even`);
+    }

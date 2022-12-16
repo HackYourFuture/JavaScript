@@ -12,3 +12,12 @@
  *   Ingredients: 4 eggs, 2 strips of bacon, 1 tsp salt/pepper
  */
 
+const Meal = {
+    MaleName: 'Omelette',
+    Serves: 2,
+    Ingredients: ['4 eggs', '2 strips of bacon', '1 tsp salt/pepper']
+}
+
+for (const property in Meal) {
+  console.log(`${property}: ${Meal[property]}`);
+}
