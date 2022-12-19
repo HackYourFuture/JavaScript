@@ -23,11 +23,11 @@ while (cycle < 2) {
       trafficLight.stateIndex = 0;
       cycle++;
       break;
-  
+
     default:
       break;
   }
-  console.log("The traffic light is on", currentState);
+  console.log(`The traffic light is on ${currentState}`);
 
   // TODO
   // if the color is green, turn it orange

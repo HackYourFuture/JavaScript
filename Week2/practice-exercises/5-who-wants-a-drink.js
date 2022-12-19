@@ -12,13 +12,7 @@
  */
 
 // There are 3 different types of drinks:
-const drinkTypes = ['cola', 'lemonade', 'water'];
-const drinkTray = [];
-
-for (let i = 0; i < 5; i++) {
-    for (let y = 0; y < drinkTypes.length; y++) {
-        drinkTray.push(drinkTypes[y]);
-    }
+function daysInMonth(month, year) {
+  return new Date(year, month, 0).getDate();
 }
-
-console.log(`Hey guys, I brought a ${drinkTray[0]}, ${drinkTray[1]}, ${drinkTray[2]}, ${drinkTray[3]}, ${drinkTray[4]}.`);
+daysInMonth(1, 2022);
