@@ -13,6 +13,15 @@ function runExperiment(sampleSize) {
   //    for keeping a count how many times the value 1 is thrown, the second
   //    element for value 2, etc.
 
+  for (let i = 0; i < sampleSize[0]; i++) {
+    let randomNumber = Math.floor(Math.random() * (6 - 1 + 1) + 1);
+    for (let j = 0; j <= 6; j++) {
+      if (randomNumber === j) {
+        valueCounts[j] = +1;
+      }
+    }
+  }
+
   const results = [];
 
   // TODO
@@ -24,7 +33,10 @@ function runExperiment(sampleSize) {
   // 2. Convert the computed percentage to a number string with a precision of
   //    two decimals, e.g. '14.60'.
   // 3. Then push that string onto the `results` array.
-
+  for (const element of valueCounts) {
+    const valuePercent = toString((element / 100).toFixed(2));
+    results.push(valuePercent);
+  }
   return results;
 }
 
