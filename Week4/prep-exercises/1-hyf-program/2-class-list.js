@@ -1,4 +1,4 @@
-import { modules, students, mentors, classes } from "./hyf";
+import { modules, students, mentors, classes } from "./hyf.js";
 
 /**
  * We would like to have a list of everyone that is currently participating in a class.
