@@ -1,9 +1,9 @@
-# Prep exercise - traffic light
+# Prep exercise - Traffic light
 
-Let's have a deeper look at the working of traffic lights this week so that we can practice logic and loops. In the previous week we went into some different ways of representing a traffic light, now let's make the traffic light work. In `traffic-light-1.js` and `traffic-light-2.js` you will find the same requirements but with different ways of representing the traffic light. Have a look through the files and solve them.
+In the previous week we started with our traffic light. Now that we also know what a function is we have one last look at the workings of a traffic light in a different way. Take a look at the `traffic-light.js` file and implement the same requirements as last week again, but then with another different way of organising.
 
 ## Things to think about
 
-- Which way of representing the traffic light did you find better? Why?
-- What happens if you change the loop to a `do-while` loop instead of a `while` loop? Why?
-- We could have also used a `for` loop to make the traffic light do 2 full rotations. Do you think that would be better? Why or why not?
+- This time the loop was changed to a for loop that will run the code 6 times. Why was that needed?
+- Why was the trafficLight added to the `main` function and not left at the top of the file?
+- What do you think is the advantage of having the `getCurrentTrafficLightState` and `getNextStateIndex` functions?

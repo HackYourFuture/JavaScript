@@ -1,26 +1,21 @@
-# Reading Material JavaScript1 Week 2
+# Reading Material JavaScript Week 2
 
 ## Agenda
 
 These are the topics for week 2:
 
-1. [Conditional statements](https://study.hackyourfuture.net/#/javascript/conditional-statements)
-2. [Loops](https://study.hackyourfuture.net/#/javascript/loops)
-3. [Revisit debuggers](https://study.hackyourfuture.net/#/tools/debuggers)
-4. [Naming conventions](https://study.hackyourfuture.net/#/programming/naming-conventions)
-5. [Your personal brand](https://github.com/HackYourFuture/yourpersonalbrand)
+1. [Scope](https://study.hackyourfuture.net/#/javascript/scope)
+1. [Modern JS](https://study.hackyourfuture.net/#/javascript/modern-js)
+1. [Problem solving](https://study.hackyourfuture.net/#/programming/problem-solving-process)
 
 ## Week goals
-All of the detailed information about every concept is in your study book. The following goal explanation will link you to the correct place to get studying. Read through the goal description once to get an idea of what you will be learning, then go through the different links and look at them in detail.
 
-This week we are going to go a little deeper and get some extra building blocks to work with. That way we can make some more interesting pieces of code that actually have some logic in them. At this point we can determine things with our values and manipulate them, but the real power of programming comes when we can make 'decisions' to do something different based on our value. That way we can actually build logic into our code! Read all about conditional statements [here](https://study.hackyourfuture.net/#/javascript/conditional-statements). Another cool thing we can do in JavaScript is repeat actions, we can do that using a concept called loops, read more about that [here](https://study.hackyourfuture.net/#/javascript/loops).
+Functions bring along with them a concept called the scope that you may have encountered a bit already but we want to explicitly explain now. Read about scope [here](https://study.hackyourfuture.net/#/javascript/scope).
 
-There are a lot of things you can do with just these building blocks (next week you will get to know the last few to complete your arsenal). You will undoubtedly already have encountered the difficulty of reading code, and all the things we learned this week will make it even more difficult to follow. It is a good idea to revisit the debugger section with this new knowledge [here](https://study.hackyourfuture.net/#/tools/debuggers). Although it is called debugging, a lot of the process of finding 'bugs' in your code is trying to understand what is happening in the code. So keep using the debugger to understand pieces of code that you are not 100% comfortable with yet!
+We have to confess we also kept something else from you until now, JavaScript has different versions. JavaScript has been evolving over its lifetime and certain syntax has been added. Have a look in your study book at the topic of what is called 'Modern JS' [here](https://study.hackyourfuture.net/#/javascript/modern-js). Throughout the curriculum we will be expecting you to use the modern syntax as that is most likely what you will be programming in. You can skip the sections that are about Promises and async/await for now, we will get there in the Using API's module. There is also a section on the history of JavaScript in there, you do not need to know this but we recommend it if you have some time to spare as it is very interesting.
 
-This is also the week we are going to start learning about best practices surrounding programming. These are general rules programmers follow so that code remains readable for others. The first will be about naming conventions, read more about that [here](https://study.hackyourfuture.net/#/programming/naming-conventions). It will mention the term `functions`, which you haven't learned about yet, but keep that in mind for next week when you will be introduced to them!
-
-We also want to start working on your personal brand in the coming weeks as it takes time to get this correct. In a couple of months we also want to start practicing interviews with some of our partner companies using your brand! So in the upcoming weeks have a look through the [personal brand repo](https://github.com/HackYourFuture/yourpersonalbrand). It will also be a nice break for your mind to do something completely different than programming :).
+Now that we are getting into more and more complex code it is also a good idea to learn a structured way to solve more complex problems. Have a look at the page on problem solving in your study book over [here](https://study.hackyourfuture.net/#/programming/problem-solving-process).
 
 ## Finished?
 
-Are you finished with going through the materials? You're doing great! If you feel ready to get practical, click [here](./MAKEME.md).
+Are you finished with going through the materials? Give yourself a pat on the back because you rock! It is time to combine everything you have learned and start practicing them vigorously. Have a look at the exercises [here](./MAKEME.md) and try to make as many of them as you can. This week there will be homework to do and hand in, so don't forget to do that! If you haven't set up the homework repository yet, have a look at your class repo.
