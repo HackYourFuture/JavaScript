@@ -1,4 +1,4 @@
-# Homework JavaScript Week 4
+# Homework JavaScript Week 3
 
 ## **Todo list**
 

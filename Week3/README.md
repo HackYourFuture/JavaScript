@@ -1,8 +1,8 @@
-# Reading Material JavaScript Week 4
+# Reading Material JavaScript Week 3
 
 ## Agenda
 
-These are the topics for week 4:
+These are the topics for week 3:
 
 1. [Higher Order Functions](https://study.hackyourfuture.net/#/javascript/higher-order-functions)
    - Array methods
