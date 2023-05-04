@@ -1,4 +1,4 @@
-# Reading Material JavaScript1 Week 1
+# Reading Material JavaScript Week 1
 
 ## Agenda
 
