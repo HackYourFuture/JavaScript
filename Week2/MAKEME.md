@@ -16,7 +16,9 @@ Inside your `JavaScript` fork, go to the folder `Week2`. Inside of that folder, 
 
 ## **2. Homework exercises**
 
-It is time to combine everything we have learned the past couple of weeks and get some feedback from experienced developers. This will be the first week you are working with the [homework repository](https://github.com/HackYourFuture/Homework/blob/main/README.md) so reserve some time to set it up. This week we expect you to do the exercises in the corresponding module/week folder (JavaScript / Week 2). Have a look at the [homework guide](https://github.com/HackYourFuture/JavaScript/blob/main/hand-in-homework-guide.md) to see how to hand in your homework.
+It is time to combine everything we have learned the past couple of weeks and get some feedback from experienced developers. This will be the first week you are working with the homework repository so reserve some time to set it up. You will find the repository in our [HackYourHomework](https://github.com/HackYourHomework/) GitHub page. There should be one called Homework-classXX where XX is your class number, you will want to fork that to your own GitHub. Have a look at the [homework guide](../hand-in-homework-guide.md) to see how to hand in your homework.
+
+This week we expect you to do the exercises in the corresponding module/week folder (JavaScript / Week 2).
 
 _NOTE: Make sure to read and apply all of the steps in the README in the homework repository to set up the extensions in Visual Studio Code!_.
 
