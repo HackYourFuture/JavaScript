@@ -25,7 +25,7 @@ In this section you will be doing interactive exercises, that will allow you to 
 
 > Prep exercises are exercises that you should work on _before_ the session on Sunday. These are a little more difficult or show an important concept and as such are a great exercise to talk about with your class and your Q&A mentor. Have a solution ready by Sunday as you may be asked to show what you did.
 
-Inside your `JavaScript` fork, go to the folder `Week2`. Inside of that folder, navigate to `/prep-exercises`. For each exercise, you will find a separate folder. The `README` explains what needs to be done. There will also be some questions at the bottom to think about. Go through them _before_ the session on Sunday as it will be covered then.
+Inside your `JavaScript` fork, go to the folder `Week1`. Inside that folder, navigate to `/prep-exercises`. For each exercise, you will find a separate folder. The `README` explains what needs to be done. There will also be some questions at the bottom to think about. Go through them _before_ the session on Sunday as it will be covered then.
 
 ## **4. Practice practice practice**
 
