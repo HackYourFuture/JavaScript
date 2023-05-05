@@ -31,19 +31,7 @@ After you've installed it, go to your command line interface. Type in the follow
 node --version
 ```
 
-It should show you version `v12.16.1` or higher.
-
-### First 3 weeks
-
-The first three weeks of this module you will be moving at your own pace. That means that we have split up the material into three sections, but feel free to go faster or slower depending on if you feel comfortable you understood the material or not. These weeks are very important, so put in the time to practice as much as possible. The homework for week 3 covers all the material in the other weeks as by then you will know all the basic building blocks that JavaScript has to offer.
-
-After those weeks we will be going into the more tricky parts of JavaScript and start solving more complex and realistic problems that you will be facing as a developer.
-
-### New way of working!
-
-Starting from this module we will be using a class repository in GitHub to get used to some of the features of GitHub as well. When the first week starts you will be invited to a new GitHub repository and will be given a first issue there to enter your information. 
-
-You will also be handing in your homework by creating issues there, starting from week 3.
+It should show you the version you are working with.
 
 ## Learning goals
 
@@ -53,6 +41,7 @@ In order to successfully complete this module you will need to master the follow
 - Know the basic building blocks of `JavaScript`
 - Correctly write and use `variables`, `functions` and `loops`
 - Understand the `control flow`
+- Be able to solve worded problems using code
 
 ## How to use this repository
 
@@ -88,10 +77,10 @@ To have a more detailed overview of the guidelines, please read [this document](
 
 | Week | Topic                                                      | Reading Materials                                                                       | Homework                                                                                 |
 | ---- | ---------------------------------------------------------- | --------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- |
-| 1.   | Variables, Variable Types, Operators, Objects, Arrays                  | [Reading W1](/Week1/README.md) | [Homework W1](/Week1/MAKEME.md) |
-| 2.   | Loops, Control Flow, If/Else,                                          | [Reading W2](/Week2/README.md) | [Homework W2](/Week2/MAKEME.md) |
-| 3.   | Functions, Scope, ModernJS                                             | [Reading W3](/Week3/README.md) | [Homework W3](/Week3/MAKEME.md) |
-| 4.   | Higher Order Functions, Array functions, Closures                      | [Reading W4](/Week4/README.md) | [Homework W4](/Week4/MAKEME.md) |
+| 1.   | JS Basics Refresher, Loops, Naming Conventions                         | [Reading W1](/Week1/README.md) | [Homework W1](/Week1/MAKEME.md) |
+| 2.   | Scope, ModernJS, Problem Solving                                       | [Reading W2](/Week2/README.md) | [Homework W2](/Week2/MAKEME.md) |
+| 3.   | Higher Order Functions, Closures, Unit Testing                         | [Reading W3](/Week3/README.md) | [Homework W3](/Week3/MAKEME.md) |
+| 4.   | This keyword, constructor functions, classes                           | [Reading W4](/Week4/README.md) | [Homework W4](/Week4/MAKEME.md) |
 
 ## Finished?
 
