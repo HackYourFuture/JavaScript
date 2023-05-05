@@ -1,7 +1,8 @@
 # Q & A Session
 
-The first 2 weeks of JavaScript we do not have homework and we encourage students to follow all the material at their own pace. So students can ask questions about any week. Expect questions about:
+The first week of JavaScript we do not have homework and we encourage students to follow all the material at their own pace. So students can ask questions about any week. Expect questions about:
 
+- Functions
 - Basic JavaScript blocks (let/const, operators, loops, if/else, functions)
 - The Debugger (both browser/vscode) and how to debug
 - Naming conventions
