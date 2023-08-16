@@ -20,7 +20,7 @@ Secondly, JavaScript has a thing called closures which you should know about. Yo
 
 Previously, we learned about the `assert` function which allow us to make code checks, but that is only the start. For consistent testing we developers write something we call unit tests, have a look at what that means [here](https://study.hackyourfuture.net/#/testing/unit-tests). Then have a look at test frameworks and what they can do over [here](https://study.hackyourfuture.net/#/tools/test-framework). Note that in our curriculum we will always be using _Jest_ as it is very popular and works well with React which we will be studying later. Behind the scenes we have been testing your homework with Jest all this time and it is where the error messages when running your homework comes from!
 
-After that it is time to start practicing again, make as many exercises as you can in the list [here](./MAKEME.md) and don't forget to hand in your homework. There will also be a test coming up for this module. What and when will be announced in your class channel, so keep an eye on that as usual! The best way to prepare is to keep programming!
+After that it is time to start practicing again, make as many exercises as you can in the list [here](./MAKEME.md) and don't forget to hand in your assignment. There will also be a test coming up for this module. What and when will be announced in your class channel, so keep an eye on that as usual! The best way to prepare is to keep programming!
 
 ## Finished?
 
