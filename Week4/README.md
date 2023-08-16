@@ -19,7 +19,7 @@ Next let's learn about constructor functions which is why we have the `new` keyw
 
 Lastly let's learn about classes which is another modern JavaScript addition to the language. Have a look [here](https://study.hackyourfuture.net/#/javascript/classes).
 
-After that it is all about practicing for the test :scream: at the end of this week. You will have received a practice test in your class channel that will show you what it is about.
+After that it is all about practicing for the assessment :scream: at the end of this week. You will have received a practice assessment in your cohort channel that will show you what it is about.
 
 ## Finished?
 
