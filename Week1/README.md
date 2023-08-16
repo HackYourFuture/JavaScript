@@ -37,7 +37,7 @@ You now have all of the basic building blocks that form the basis of all code! Y
 
 This is also the week we are going to start learning about best practices surrounding programming. These are general rules programmers follow so that code remains readable for others. The first will be about naming conventions, read more about that [here](https://study.hackyourfuture.net/#/programming/naming-conventions) and try to make it a habit to follow them.
 
-Lastly we want to introduce the first steps to testing code. Let's first have a look at what software testing is and why we do it [here](https://www.ministryoftesting.com/articles/e463d4ba?s_id=14519957). The simplest form of testing is using assertions, have a look what that is [here](https://study.hackyourfuture.net/#/testing/assertion), we will introduce this more in your homework so you will see how it works.
+Lastly we want to introduce the first steps to testing code. Let's first have a look at what software testing is and why we do it [here](https://www.ministryoftesting.com/articles/e463d4ba?s_id=14519957). The simplest form of testing is using assertions, have a look what that is [here](https://study.hackyourfuture.net/#/testing/assertion), we will introduce this more in your assignment so you will see how it works.
 
 ## Finished?
 
