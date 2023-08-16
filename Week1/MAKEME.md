@@ -1,4 +1,4 @@
-# Homework JavaScript Week 1
+# Assignment JavaScript Week 1
 
 ## **Todo list**
 
@@ -9,7 +9,7 @@
 
 ## **1. JS Tutor**
 
-Practice, practice, practice. This week you are not handing in any homework, but are going to practice as much javascript as you can. Play around with the exercises mentioned below, remember that you can copy the code into [JS Tutor](http://pythontutor.com/javascript.html#mode=edit) to step through the code. Or look at it in the debugger in the browser/vscode.
+Practice, practice, practice. This week you are not handing in any assignment, but are going to practice as much javascript as you can. Play around with the exercises mentioned below, remember that you can copy the code into [JS Tutor](http://pythontutor.com/javascript.html#mode=edit) to step through the code. Or look at it in the debugger in the browser/vscode.
 
 ## **2. Practice the concepts**
 
@@ -23,7 +23,7 @@ In this section you will be doing interactive exercises, that will allow you to 
 
 ## **3. Prep exercises**
 
-> Prep exercises are exercises that you should work on _before_ the session on Sunday. These are a little more difficult or show an important concept and as such are a great exercise to talk about with your class and your Q&A mentor. Have a solution ready by Sunday as you may be asked to show what you did.
+> Prep exercises are exercises that you should work on _before_ the session on Sunday. These are a little more difficult or show an important concept and as such are a great exercise to talk about with your cohort and your Q&A mentor. Have a solution ready by Sunday as you may be asked to show what you did.
 
 Inside your `JavaScript` fork, go to the folder `Week1`. Inside that folder, navigate to `/prep-exercises`. For each exercise, you will find a separate folder. The `README` explains what needs to be done. There will also be some questions at the bottom to think about. Go through them _before_ the session on Sunday as it will be covered then.
 
@@ -39,9 +39,9 @@ There are also multiple websites that provide constant challenges to practice yo
 - [leetcode](https://leetcode.com/) - Sign up and start solving!
 - [Code Wars](https://www.codewars.com/) - Once you feel comfortable with the JavaScript syntax sign up for code wars to practice. It is a website where you can solve exercises and rank up! When signing up, only choose JavaScript to really focus the problems on learning to solve problems in it. You can later change it to other technologies when you get more familiar.
 
-## No homework to hand in (for now)
+## No assignment to hand in (for now)
 
-For the first week of JavaScript there is no homework to hand in as the exercises already give you all the feedback you need.
+For the first week of JavaScript there is no assignment to hand in as the exercises already give you all the feedback you need.
 
 ## Done early?
 
