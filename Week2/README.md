@@ -18,4 +18,4 @@ Now that we are getting into more and more complex code it is also a good idea t
 
 ## Finished?
 
-Are you finished with going through the materials? Give yourself a pat on the back because you rock! It is time to combine everything you have learned and start practicing them vigorously. Have a look at the exercises [here](./MAKEME.md) and try to make as many of them as you can. This week there will be homework to do and hand in, so don't forget to do that! If you haven't set up the homework repository yet, have a look at your class repo.
+Are you finished with going through the materials? Give yourself a pat on the back because you rock! It is time to combine everything you have learned and start practicing them vigorously. Have a look at the exercises [here](./MAKEME.md) and try to make as many of them as you can. This week there will be an assignment to do and hand in, so don't forget to do that! If you haven't set up the assignment repository yet, have a look at your class repo.
