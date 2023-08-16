@@ -49,38 +49,38 @@ In order to successfully complete this module you will need to master the follow
 
 This repository consists of 2 essential parts for each week:
 
-1. `README`: this document contains all the required theory you need to understand **while** working on the homework. It contains the list of concepts that you will want to study this week and points you to your study book to read all about them. This is the **first thing** you should start with every week
-2. `MAKEME`: this document contains the instructions for each week's practical tasks / homework. Start with the exercises rather quickly, so that you can ground the concepts you read about earlier. In the first two weeks we do not expect you to hand in any homework as the online resources already check the code automatically, from week 3 our mentors will start giving you feedback on your homework.
+1. `README`: this document contains all the required theory you need to understand **while** working on the weekly assignment. It contains the list of concepts that you will want to study this week and points you to your study book to read all about them. This is the **first thing** you should start with every week
+2. `MAKEME`: this document contains the instructions for each week's practical tasks / assignment. Start with the exercises rather quickly, so that you can ground the concepts you read about earlier. In the first two weeks we do not expect you to hand in any assignment as the online resources already check the code automatically, from week 3 our mentors will start giving you feedback on your assignments.
 
 ### How to study
 
 Let's say you are just starting out with the JavaScript module. This is what you do...
 
 1. The week always starts on **Wednesday**. First thing you'll do is open the `README.md` for that week. For the first week of `JavaScript`, that would be [Week1 Reading](/Week1/README.md)
-2. You spend **Wednesday** and **Thursday** going over the resources and try to get a basic understanding of the concepts. In the meanwhile, you'll also implement any feedback you got on last week's homework (from the HTML-CSS module)
-3. On **Friday** you start with the homework, found in the `MAKEME.md`. For the first week of `JavaScript`, that would be [Week1 Homework](/Week1/MAKEME.md)
-4. You spend **Friday** and **Saturday** playing around with the exercises and write down any questions you might have
-5. **DEADLINE 1**: You'll submit any questions you might have before **Saturday 23.59**, in the class channel
-6. On **Sunday** you'll attend class. It'll be of the Q&A format, meaning that there will be no new material. Instead your questions shall be discussed and you can learn from others
-7. You spend **Monday** and **Tuesday** finalizing your homework
-8. **DEADLINE 2**: You submit your homework to the right channels (GitHub) before **Tuesday 23.59**. If you can't make it on time, please communicate it with your mentor
+2. You spend **Wednesday** and **Thursday** going over the resources and try to get a basic understanding of the concepts. In the meanwhile, you'll also implement any feedback you got on last week's assignment (from the HTML-CSS module)
+3. On **Friday** you start with the assignment, found in the `MAKEME.md`. For the first week of `JavaScript`, that would be [Week1 Assignment](/Week1/MAKEME.md)
+4. You spend **Friday** and **Saturday** playing around with the exercises and write down any questions you might have.
+5. **DEADLINE 1**: You'll submit any questions you might have before **Saturday 23.59**, in the cohort channel.
+6. On **Sunday** you'll attend the Q&A session. It'll be of the Q&A format, meaning that there will be no new material. Instead your questions shall be discussed and you can learn from others.
+7. You spend **Monday** and **Tuesday** finalizing your assignment.
+8. **DEADLINE 2**: You submit your assignment to the right channels (GitHub) before **Tuesday 23.59**. If you can't make it on time, please communicate it with your mentor
 9. Start the new week by going back to point 1!
 
 In summary:
 
 ![Weekflow](assets/weekflow.png)
 
-To have a more detailed overview of the guidelines, please read [this document](https://docs.google.com/document/d/1JUaEbxMQTyljAPFsWIbbLwwvvIXZ0VCHmCCN8RaeVIc/edit?usp=sharing) or ask your mentor/class on Slack!
+To have a more detailed overview of the guidelines, please read [this document](https://docs.google.com/document/d/1JUaEbxMQTyljAPFsWIbbLwwvvIXZ0VCHmCCN8RaeVIc/edit?usp=sharing) or ask your mentor/cohort on Slack!
 
 
 ## Planning
 
-| Week | Topic                                                      | Reading Materials                                                                       | Homework                                                                                 |
+| Week | Topic                                                      | Reading Materials                                                                       | Assignment                                                                                 |
 | ---- | ---------------------------------------------------------- | --------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- |
-| 1.   | JS Basics Refresher, Loops, Naming Conventions                         | [Reading W1](/Week1/README.md) | [Homework W1](/Week1/MAKEME.md) |
-| 2.   | Scope, ModernJS, Problem Solving                                       | [Reading W2](/Week2/README.md) | [Homework W2](/Week2/MAKEME.md) |
-| 3.   | Higher Order Functions, Closures, Unit Testing                         | [Reading W3](/Week3/README.md) | [Homework W3](/Week3/MAKEME.md) |
-| 4.   | This keyword, constructor functions, classes                           | [Reading W4](/Week4/README.md) | [Homework W4](/Week4/MAKEME.md) |
+| 1.   | JS Basics Refresher, Loops, Naming Conventions                         | [Reading W1](/Week1/README.md) | [Assignment W1](/Week1/MAKEME.md) |
+| 2.   | Scope, ModernJS, Problem Solving                                       | [Reading W2](/Week2/README.md) | [Assignment W2](/Week2/MAKEME.md) |
+| 3.   | Higher Order Functions, Closures, Unit Testing                         | [Reading W3](/Week3/README.md) | [Assignment W3](/Week3/MAKEME.md) |
+| 4.   | This keyword, constructor functions, classes                           | [Reading W4](/Week4/README.md) | [Assignment W4](/Week4/MAKEME.md) |
 
 ## Finished?
 
