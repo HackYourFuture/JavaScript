@@ -1,6 +1,6 @@
 # How to hand in the weekly assignment
 
-In this module you'll submit your assignment only using GIT and GitHub.
+In this module you'll submit your assignment only using GIT and GitHub. 
 
 1. [GitHub](https://www.github.com/HackYourFuture/JavaScript)
 
