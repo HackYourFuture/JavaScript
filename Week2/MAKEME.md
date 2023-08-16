@@ -1,26 +1,26 @@
-# Homework JavaScript Week 2
+# Assignment JavaScript Week 2
 
-This will be the first week you are expected to hand in some homework when we combine all of the concepts you have been practicing the last 3 weeks.
+This will be the first week you are expected to hand in an assignment when we combine all of the concepts you have been practicing the last 3 weeks.
 
 ## **Todo list**
 
 1. Prep exercises
-1. Homework exercises
+1. Assignment
 1. Practice practice practice
 
 ## **1. Prep exercises**
 
-> Prep exercises are exercises that you should work on _before_ the session on Sunday. These are a little more difficult or show an important concept and as such are a great exercise to talk about with your class and your Q&A mentor. Have a solution ready by Sunday as you may be asked to show what you did.
+> Prep exercises are exercises that you should work on _before_ the session on Sunday. These are a little more difficult or show an important concept and as such are a great exercise to talk about with your cohort and your Q&A mentor. Have a solution ready by Sunday as you may be asked to show what you did.
 
 Inside your `JavaScript` fork, go to the folder `Week2`. Inside of that folder, navigate to `/prep-exercises`. For each exercise, you will find a separate folder. The `README` explains what needs to be done. There will also be some questions at the bottom to think about. Go through them _before_ the session on Sunday as it will be covered then.
 
-## **2. Homework exercises**
+## **2. Assignment**
 
-It is time to combine everything we have learned the past couple of weeks and get some feedback from experienced developers. This will be the first week you are working with the homework repository so reserve some time to set it up. You will find the repository in our [HackYourHomework](https://github.com/HackYourHomework/) GitHub page. There should be one called Homework-classXX where XX is your class number, you will want to fork that to your own GitHub. Have a look at the [homework guide](../hand-in-homework-guide.md) to see how to hand in your homework.
+It is time to combine everything we have learned the past couple of weeks and get some feedback from experienced developers. This will be the first week you are working with the assignment repository so reserve some time to set it up. You will find the repository in our [HackYourHomework](https://github.com/HackYourHomework/) GitHub page. There should be one called Assignment-cohortXX where XX is your cohort number, you will want to fork that to your own GitHub. Have a look at the [Assignment guide](../hand-in-assignments-guide.md) to see how to hand in your assignment.
 
 This week we expect you to do the exercises in the corresponding module/week folder (JavaScript / Week 2).
 
-_NOTE: Make sure to read and apply all of the steps in the README in the homework repository to set up the extensions in Visual Studio Code!_.
+_NOTE: Make sure to read and apply all of the steps in the README in the assignment repository to set up the extensions in Visual Studio Code!_.
 
 ## **3. Practice practice practice**
 
