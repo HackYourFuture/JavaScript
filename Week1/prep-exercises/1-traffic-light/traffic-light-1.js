@@ -14,10 +14,17 @@ while (rotations < 2) {
 
   // TODO
   // if the color is green, turn it orange
+  if (currentState === 'green') {
+  trafficLight.stat = 'orange';
   // if the color is orange, turn it red
+  } else if (currentState === 'orange') {
+  trafficLight.stat = 'red';
   // if the color is red, add 1 to rotations and turn it green
-}
-
+  }  else if (currentState === 'red') {
+  trafficLight.stat = 'green';
+ }
+   rotations++;
+};
 /**
  * The output should be:
 
