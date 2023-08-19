@@ -14,8 +14,19 @@ while (rotations < 2) {
 
   // TODO
   // if the color is green, turn it orange
-  // if the color is orange, turn it red
-  // if the color is red, add 1 to rotations and turn it green
+    if (trafficLight.state === 'green') {
+    trafficLight.state = 'orange';
+      // if the color is orange, turn it red
+  } else if (trafficLight.state === 'orange') {
+    trafficLight.state = 'red';
+      // if the color is red, add 1 to rotations and turn it green
+  } else if (trafficLight.state === 'red') {
+    trafficLight.state = 'green';
+    rotations++;
+  }
+}
+  
+  
 }
 
 /**
