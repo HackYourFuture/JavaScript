@@ -1,25 +1,22 @@
 "use strict";
 
 function getCurrentState(trafficLight) {
-  if(trafficLight.stateIndex==0){
+  if (trafficLight.stateIndex == 0) {
     return "green";
-  }
-  else if(trafficLight.stateIndex==1){
+  } else if (trafficLight.stateIndex == 1) {
     return "orange";
-  }
-  else{
+  } else {
     return "red";
   }
 }
 
 function getNextStateIndex(trafficLight) {
-if(trafficLight.stateIndex<2){
-  trafficLight.stateIndex++;
-}
-else{
-  trafficLight.stateIndex=0;
-}
-return trafficLight.stateIndex;
+  if (trafficLight.stateIndex < 2) {
+    trafficLight.stateIndex++;
+  } else {
+    trafficLight.stateIndex = 0;
+  }
+  return trafficLight.stateIndex;
 }
 function waitSync(secs) {
   const start = Date.now();
