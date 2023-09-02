@@ -11,11 +11,29 @@ import { modules, students, mentors, classes } from "./hyf.js";
  *
  *  [{ name: 'John', role: 'student' }, { name: 'Mary', role: 'mentor' }]
  */
+
 const getPeopleOfClass = (className) => {
-  // TODO complete this function
+  const currentCla = classes
+    .filter((currentClass) => currentClass.active)
+    .find((currentClass) => currentClass.name === className);
+
+  const mentoring = mentors
+    .filter((mentor) => mentor.nowTeaching === currentCla.currentModule) // the big problem was using find() terminal report `not function`
+    .map((mentor) => ({
+      name: mentor.name,
+      role: "mentor",
+    }));
+
+  const currentStudents = students
+    .filter((student) => student.class === className)
+    .map((student) => ({
+      name: student.name,
+      role: "student",
+    }));
+
+  return [...currentStudents, ...mentoring];
 };
-// You can uncomment out this line to try your function
-// console.log(getPeopleOfClass('class34'));
+console.log(getPeopleOfClass("class34"));
 
 /**
  * We would like to have a complete overview of the current active classes.
@@ -30,7 +48,13 @@ const getPeopleOfClass = (className) => {
  *  }
  */
 const getActiveClasses = () => {
-  // TODO complete this function
+  const scopeRelease = {};
+  const activeClasses = classes.filter((cla) => cla.active);
+  activeClasses.forEach((cla) => {
+    const peopleOfClass = getPeopleOfClass(cla.name);
+    scopeRelease[cla.name] = peopleOfClass;
+  });
+
+  return scopeRelease;
 };
-// You can uncomment out this line to try your function
-// console.log(getActiveClasses());
+console.log(getActiveClasses());
