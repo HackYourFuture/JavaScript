@@ -48,13 +48,52 @@ console.log(getPeopleOfClass("class34"));
  *  }
  */
 const getActiveClasses = () => {
-  const scopeRelease = {};
-  const activeClasses = classes.filter((cla) => cla.active);
-  activeClasses.forEach((cla) => {
-    const peopleOfClass = getPeopleOfClass(cla.name);
-    scopeRelease[cla.name] = peopleOfClass;
-  });
+  const populate = {};
 
-  return scopeRelease;
+  classes
+    .filter((cla) => cla.active)
+    .forEach((cla) => {
+      populate[cla.name] = getPeopleOfClass(cla.name);
+    });
+
+  return populate;
 };
 console.log(getActiveClasses());
+
+const againGetActiveClasses = () => {
+  const populate = {};
+
+  for (const cla of classes) {
+    if (cla.active) {
+      populate[cla.name] = getPeopleOfClass(cla.name);
+    }
+  }
+
+  return populate;
+};
+
+console.log(againGetActiveClasses());
+
+// works not
+// const getActiveClassesAgain = () => {
+//   return[ classes
+//     .filter((cla) => cla.active)
+//     .map((cla) => ({
+//       className: cla.name,
+//       people: getPeopleOfClass(cla.name),
+//     }))
+//   ]
+// };
+
+// console.log(getActiveClassesAgain());
+
+const getActiveClassesAgain = () => {
+  return classes
+    .filter((cla) => cla.active)
+    .reduce((acr, cla) => {
+      acr[cla.name] = getPeopleOfClass(cla.name);
+      return acr;
+    }, {});
+};
+
+console.log(getActiveClassesAgain());
