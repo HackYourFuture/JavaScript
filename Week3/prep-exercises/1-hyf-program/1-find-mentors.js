@@ -33,7 +33,7 @@ console.log(findMentorForModule("javascript"));
 /* 
 
  * * Terminal ERROR:
- * some round I got und
+ * some round I got `undefined`
 
  kumait@Kumaits-MBP prep-exercises % node 1-hyf-program/1-find-mentors.js  
  [ 'Stas', 'Andrej', 'Yash', 'Collin' ]
