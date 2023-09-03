@@ -24,8 +24,9 @@ console.log(possibleMentorsForModule("using-apis"));
  * It should return a single name.
  */
 const findMentorForModule = (moduleName) => {
-  const mentorRandom = Math.floor(Math.random() * mentors.length); // error no change: try `-1` to equal the index `(mentors.length - 1)`
-  return possibleMentorsForModule(moduleName)[mentorRandom];
+  const pmfm = possibleMentorsForModule(moduleName);
+  const mentorRandom = Math.floor(Math.random() * pmfm.length); // replace  `mentors` by `pmfm` to fixe undefined
+  return pmfm[mentorRandom];
 };
 
 console.log(findMentorForModule("javascript"));
