@@ -14,6 +14,14 @@ while (cycle < 2) {
   const currentState = trafficLight.possibleStates[trafficLight.stateIndex];
   console.log("The traffic light is on", currentState);
 
+if(currentState == "green"){
+  trafficLight.stateIndex ++;
+}else if(currentState == "orange") {
+  trafficLight.stateIndex ++;
+}else{
+  trafficLight.stateIndex -= 2;
+  cycle++;
+}
   // TODO
   // if the color is green, turn it orange
   // if the color is orange, turn it red
