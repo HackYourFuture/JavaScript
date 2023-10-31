@@ -1,8 +1,20 @@
-"use strict";
+'use strict';
+// new function is created for code reusable.
+// This function will give you random number from 1 to 6
+function rollDice(min, max) {
+  return Math.floor(Math.random() * (max - min + 1)) + 1;
+}
+
+function percent(diceRolled, totalDiceRoll) {
+  return (diceRolled / totalDiceRoll) * 100;
+}
 
 function runExperiment(sampleSize) {
   const valueCounts = [0, 0, 0, 0, 0, 0];
-
+  for (let index = sampleSize; index > 0; --index) {
+    let result = rollDice(1, 6);
+    valueCounts[result - 1] += 1;
+  }
   // TODO
   // Write a for loop that iterates `sampleSize` times (sampleSize is a number).
   // In each loop iteration:
@@ -14,7 +26,14 @@ function runExperiment(sampleSize) {
   //    element for value 2, etc.
 
   const results = [];
-
+  valueCounts.forEach((rolledDiceCount) => {
+    // console.log(percent(rolledDiceCount, sampleSize));
+    results.push(
+      ` '${parseFloat(percent(rolledDiceCount, sampleSize))
+        .toFixed(2)
+        .toString()}'`
+    );
+  });
   // TODO
   // Write a for..of loop for the `valueCounts` array created in the previous
   // loop. In each loop iteration:
@@ -31,13 +50,24 @@ function runExperiment(sampleSize) {
 function main() {
   const sampleSizes = [100, 1000, 1000000];
 
+  for (let index = 0; index < sampleSizes.length; index++) {
+    console.log(
+      `[ ${runExperiment(sampleSizes[index])} ] ${sampleSizes[index]}`
+    );
+
+    // This just extra to print the result on the webpage
+    document.getElementById(
+      (index + 1).toString()
+    ).innerHTML = `[ ${runExperiment(sampleSizes[index])} ] ${
+      sampleSizes[index]
+    }`;
+  }
   // TODO
-  // Write a for..of loop that calls the `runExperiment()` function for each
-  // value of the `sampleSizes` array.
-  // Log the results of each experiment as well as the experiment size to the
-  // console.
+  // Write a for..of loop
+  // that calls the `runExperiment()` function for each value of the `sampleSizes` array.
+  // Log the results of each experiment as well as the experiment size to the console.
   // The expected output could look like this:
-  //
+
   // [ '26.00', '17.00', '10.00', '19.00', '16.00', '12.00' ] 100
   // [ '14.60', '17.10', '19.30', '15.50', '16.70', '16.80' ] 1000
   // [ '16.71', '16.68', '16.69', '16.66', '16.67', '16.59' ] 1000000
