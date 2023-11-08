@@ -1,4 +1,4 @@
-import { modules, students, mentors, classes } from "./hyf.js";
+import { modules, students, mentors, classes } from './hyf.js';
 
 /**
  * Tjebbe would like help to get a list of possible mentors for a module.
@@ -8,10 +8,16 @@ import { modules, students, mentors, classes } from "./hyf.js";
  *  ['John', 'Mary']
  */
 const possibleMentorsForModule = (moduleName) => {
-  // TODO complete this function
+  const mentorList = [];
+  mentors.forEach((mentor) => {
+    if (mentor.canTeach.includes(moduleName)) {
+      mentorList.push(mentor.name);
+    }
+  });
+  return mentorList;
 };
 // You can uncomment out this line to try your function
-// console.log(possibleMentorsForModule('using-apis'));
+console.log(`${possibleMentorsForModule('using-apis')} can teach API module`);
 
 /**
  * Tjebbe wants to make it even easier for himself.
@@ -20,7 +26,17 @@ const possibleMentorsForModule = (moduleName) => {
  * It should return a single name.
  */
 const findMentorForModule = (moduleName) => {
-  // TODO complete this function
+  const mentorList = [];
+  let randomNum;
+  mentors.forEach((mentor) => {
+    if (mentor.canTeach.includes(moduleName)) {
+      mentorList.push(mentor.name);
+    }
+  });
+  randomNum = Math.floor(Math.random() * (mentorList.length - 1 - 0 + 1)) + 0;
+  return mentorList[randomNum];
 };
 // You can uncomment out this line to try your function
-// console.log(findMentorForModule('javascript'));
+console.log(
+  `${findMentorForModule('javascript')} is going to teach Javascript`
+);
