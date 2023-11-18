@@ -8,10 +8,10 @@ import { modules, students, mentors, classes } from './hyf.js';
  *  ['John', 'Mary']
  */
 
-// then we take the name of the teacher and put it in a new array
+
 
 const possibleMentorsForModule = (moduleName) => {
-  // first we take all the teacher who can teach the 'using apis' module
+
   const mentorList = [];
   mentors.forEach((mentor) => {
     if (mentor.canTeach.includes(moduleName)) {
@@ -21,7 +21,7 @@ const possibleMentorsForModule = (moduleName) => {
   return mentorList;
 };
 // You can uncomment out this line to try your function
-// console.log(`${possibleMentorsForModule('using-apis')} can teach API module`);
+ console.log(`${possibleMentorsForModule('using-apis')} can teach API module`);
 
 /**
  * Tjebbe wants to make it even easier for himself.
