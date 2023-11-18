@@ -7,7 +7,11 @@ import { modules, students, mentors, classes } from './hyf.js';
  * It should return an array of names. So something like:
  *  ['John', 'Mary']
  */
+
+// then we take the name of the teacher and put it in a new array
+
 const possibleMentorsForModule = (moduleName) => {
+  // first we take all the teacher who can teach the 'using apis' module
   const mentorList = [];
   mentors.forEach((mentor) => {
     if (mentor.canTeach.includes(moduleName)) {
@@ -17,7 +21,7 @@ const possibleMentorsForModule = (moduleName) => {
   return mentorList;
 };
 // You can uncomment out this line to try your function
-console.log(`${possibleMentorsForModule('using-apis')} can teach API module`);
+// console.log(`${possibleMentorsForModule('using-apis')} can teach API module`);
 
 /**
  * Tjebbe wants to make it even easier for himself.
@@ -25,6 +29,12 @@ console.log(`${possibleMentorsForModule('using-apis')} can teach API module`);
  *
  * It should return a single name.
  */
+
+// const maxNum = 10;
+// const minNum = 0;
+// const randomNumber = Math.floor(Math.random() * (maxNum - minNum + 1) + minNum);
+// console.log(randomNumber);
+
 const findMentorForModule = (moduleName) => {
   const mentorList = [];
   let randomNum;
@@ -33,8 +43,11 @@ const findMentorForModule = (moduleName) => {
       mentorList.push(mentor.name);
     }
   });
-  randomNum = Math.floor(Math.random() * (mentorList.length - 1 - 0 + 1)) + 0;
-  return mentorList[randomNum];
+  const maxNum = mentorList.length - 1;
+  const minNum = 0;
+  randomNum = Math.floor(Math.random() * (maxNum - minNum + 1) + minNum);
+  const randomMentor = mentorList[randomNum];
+  return randomMentor;
 };
 // You can uncomment out this line to try your function
 console.log(

@@ -49,6 +49,49 @@ console.log(getPeopleOfClass('class34'));
  */
 const getActiveClasses = () => {
   // TODO complete this function
+
+  const activeClasses = classes
+    .map((eachClass) => {
+      if (eachClass.active) return eachClass.name;
+    })
+    .filter((eachClass) => eachClass !== undefined);
+
+  const activeStudent = students
+    .map((student) => {
+      if (student.graduated == false)
+        return { name: student.name, class: student.class, role: 'student' };
+    })
+    .filter((student) => student !== undefined);
+
+  const activeModule = classes
+    .filter((eachClass) => eachClass.active)
+    .map((eachClass) => eachClass.currentModule);
+
+  const activeMentor = mentors
+    .map((mentor) => {
+      if (activeModule.includes(mentor.nowTeaching)) {
+        const mentorName = mentor.name;
+        const className = classes
+          .filter((eachClass) => eachClass.currentModule == mentor.nowTeaching)
+          .map((eachClass) => eachClass.name)
+          .pop();
+        return { name: mentorName, class: className, role: 'mentor' };
+      }
+    })
+    .filter((mentor) => mentor !== undefined);
+
+  const activeClassObj = activeClasses.map((eachClass) => {
+    const studentList = activeStudent.filter(
+      (student) => student.class == eachClass
+    );
+    const mentorList = activeMentor.filter(
+      (mentor) => mentor.class == eachClass
+    );
+    return { [eachClass]: [...studentList, ...mentorList] };
+  });
+
+  return JSON.stringify(activeClassObj, null, 2);
 };
 // You can uncomment out this line to try your function
-// console.log(getActiveClasses());
+console.log('active classes:');
+console.log(getActiveClasses());
