@@ -4,6 +4,7 @@ function createWallet(name, cash = 0) {
   return {
     _name: name,
     _cash: cash,
+    _dailyAllowance: 40, // default value for daily allowance
 
     deposit: function (amount) {
       this._cash += amount;
@@ -15,8 +16,22 @@ function createWallet(name, cash = 0) {
         return 0;
       }
 
+      // first check if the amount to withdraw is greater than the daily allowance
+      if (amount > this._dailyAllowance) {
+        console.log(`Insufficient remaining daily allowance!`);
+        return 0;
+      }
+
       this._cash -= amount;
       return amount;
+    },
+
+    // setting daily allowance to 80
+    setDailyAllowance: function (newAllowance) {
+      this._dailyAllowance = newAllowance;
+      console.log(
+        `Daily allowance set to: ${eurosFormatter.format(newAllowance)}`
+      );
     },
 
     transferInto: function (wallet, amount) {
@@ -46,6 +61,8 @@ function main() {
   const walletJoe = createWallet('Joe', 10);
   const walletJane = createWallet('Jane', 20);
 
+  walletJack.transferInto(walletJoe, 50);
+  walletJack.setDailyAllowance(80);
   walletJack.transferInto(walletJoe, 50);
   walletJane.transferInto(walletJoe, 25);
 

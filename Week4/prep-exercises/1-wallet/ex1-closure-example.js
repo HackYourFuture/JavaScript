@@ -1,4 +1,4 @@
-import eurosFormatter from "./euroFormatter.js";
+import eurosFormatter from './euroFormatter.js';
 
 /**
  * This is the closure way of doing things and we have already completed it for you so you don't need to do anything.
@@ -68,9 +68,9 @@ function createWallet(name, cash = 0) {
 }
 
 function main() {
-  const walletJack = createWallet("Jack", 100);
-  const walletJoe = createWallet("Joe", 10);
-  const walletJane = createWallet("Jane", 20);
+  const walletJack = createWallet('Jack', 100);
+  const walletJoe = createWallet('Joe', 10);
+  const walletJane = createWallet('Jane', 20);
 
   walletJack.transferInto(walletJoe, 50);
   walletJack.setDailyAllowance(80);

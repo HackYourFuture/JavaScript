@@ -7,6 +7,7 @@ class Wallet {
   constructor(name, cash) {
     this.#name = name;
     this.#cash = cash;
+    this.dailyAllowance = 40;
   }
 
   get name() {
@@ -23,6 +24,12 @@ class Wallet {
       return 0;
     }
 
+    // first check if the amount to withdraw is greater than the daily allowance
+    if (amount > this.dailyAllowance) {
+      console.log(`Insufficient remaining daily allowance!`);
+      return 0;
+    }
+
     this.#cash -= amount;
     return amount;
   }
@@ -33,8 +40,17 @@ class Wallet {
         wallet.name
       }`
     );
+
     const withdrawnAmount = this.withdraw(amount);
     wallet.deposit(withdrawnAmount);
+  }
+
+  // setting daily allowance to 80
+  setDailyAllowance(newAllowance) {
+    this.dailyAllowance = newAllowance;
+    console.log(
+      `Daily allowance set to: ${eurosFormatter.format(newAllowance)}`
+    );
   }
 
   reportBalance() {
@@ -50,8 +66,9 @@ function main() {
   const walletJane = new Wallet('Jane', 20);
 
   walletJack.transferInto(walletJoe, 50);
+  walletJack.setDailyAllowance(80);
+  walletJack.transferInto(walletJoe, 50);
   walletJane.transferInto(walletJoe, 25);
-
   walletJane.deposit(20);
   walletJane.transferInto(walletJoe, 25);
 
