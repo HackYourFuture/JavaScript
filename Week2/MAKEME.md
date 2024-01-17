@@ -16,7 +16,7 @@ Inside your `JavaScript` fork, go to the folder `Week2`. Inside of that folder, 
 
 ## **2. Assignment**
 
-It is time to combine everything we have learned the past couple of weeks and get some feedback from experienced developers. This will be the first week you are working with the assignment repository so reserve some time to set it up. You will find the repository in our [HackYourHomework](https://github.com/HackYourHomework/) GitHub page. There should be one called Assignment-cohortXX where XX is your cohort number, you will want to fork that to your own GitHub. Have a look at the [Assignment guide](../hand-in-assignments-guide.md) to see how to hand in your assignment.
+It is time to combine everything we have learned the past couple of weeks and get some feedback from experienced developers. This will be the first week you are working with the assignment repository so reserve some time to set it up. You will find the repository in our [HackYourAssignment](https://github.com/HackYourAssignment/) GitHub page. There should be one called Assignment-cohortXX where XX is your cohort number, you will want to fork that to your own GitHub. Have a look at the [Assignment guide](../hand-in-assignments-guide.md) to see how to hand in your assignment.
 
 This week we expect you to do the exercises in the corresponding module/week folder (JavaScript / Week 2).
 
