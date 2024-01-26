@@ -3,9 +3,26 @@
  *
  * Declare a variable that holds an empty array, called drinkTray.
  * Create a loop that runs 5 times. On each iteration, push a drink into the drinkTray variable. The drinkTray can only hold at most two instances of the same drink type, for example it can only hold 2 colas, 2 lemonades, 2 waters.
- * 
+ *
  * Log to the console: "Hey guys, I brought a [INSERT VALUES FROM ARRAY]!" (For example: "Hey guys, I brought a cola, cola, lemonade, lemonade, water!")
  */
 
 // There are 3 different types of drinks:
-const drinkTypes = ['cola', 'lemonade', 'water'];
+const drinkTypes = ["juice", "lemonade", "water"];
+
+let drinkTray = [];
+let i = (j = 0);
+fillTray();
+function fillTray() {
+  while (i < 5) {
+    if (i > 2) {
+      drinkTray.push(drinkTypes[i - 2]);
+    } else {
+      drinkTray.push(drinkTypes[i]);
+    }
+
+    i++;
+  }
+}
+
+console.log(`Hey guys, I brought a ${drinkTray.join(", ")}!`);

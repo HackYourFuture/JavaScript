@@ -10,9 +10,17 @@ const trafficLight = {
 };
 
 let cycle = 0;
-while (cycle < 2) {
-  const currentState = trafficLight.possibleStates[trafficLight.stateIndex];
-  console.log("The traffic light is on", currentState);
+while (cycle < 6) {
+  function display() {
+    const currentState = trafficLight.possibleStates[trafficLight.stateIndex];
+    console.log("The traffic light is on", currentState);
+  }
+  display();
+  trafficLight.stateIndex++;
+  if (trafficLight.stateIndex > 2) {
+    trafficLight.stateIndex = 0;
+  }
+  cycle++;
 
   // TODO
   // if the color is green, turn it orange
