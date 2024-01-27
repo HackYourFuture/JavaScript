@@ -4,19 +4,38 @@
  * that moment.
  */
 const trafficLight = {
-  state: "green",
-};
+  state: "green"};
 
 let rotations = 0;
-while (rotations < 2) {
-  const currentState = trafficLight.state;
+while (rotations <2) {
+  let currentState = trafficLight.state;
   console.log("The traffic light is on", currentState);
+
+
 
   // TODO
   // if the color is green, turn it orange
   // if the color is orange, turn it red
   // if the color is red, add 1 to rotations and turn it green
-}
+
+ switch (currentState) {
+
+  case "green":
+  trafficLight.state = "orange";
+  break;
+
+  case "orange":
+  trafficLight.state = "red";
+  break;
+
+  case "red":
+  trafficLight.state = "green";
+  rotations ++;
+ 
+
+ }}
+
+
 
 /**
  * The output should be:
@@ -28,4 +47,4 @@ The traffic light is on green
 The traffic light is on orange
 The traffic light is on red
 
-*/
+*/ 
