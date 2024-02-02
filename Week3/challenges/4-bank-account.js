@@ -28,10 +28,34 @@ const bankAccount = {
 };
 
 const donateMoney = (amount, onSuccess, onFail) => {
-  // TODO complete this function
+  if (amount <= bankAccount.currentBalance) {
+    const { prevAmount, newAmount, reason } =
+      bankAccount.transactions[bankAccount.transactions.length - 1];
+    bankAccount.transactions.push({
+      prevAmount: prevAmount - amount,
+      newAmount: newAmount - amount,
+      reason: "Donation",
+    });
+    bankAccount.currentBalance = bankAccount.currentBalance - amount;
+    onSuccess === onSuccessEnglish ? onSuccessEnglish() : onSuccessDutch;
+  } else {
+    onFail === onFailEnglish ? onFailEnglish() : onFailDutch();
+  }
 };
 const payRent = (amount, onSuccess, onFail) => {
-  // TODO complete this function
+  if (amount <= bankAccount.currentBalance) {
+    const { prevAmount, newAmount, reason } =
+      bankAccount.transactions[bankAccount.transactions.length - 1];
+    bankAccount.transactions.push({
+      prevAmount: prevAmount - amount,
+      newAmount: newAmount - amount,
+      reason: "Rent",
+    });
+    bankAccount.currentBalance = bankAccount.currentBalance - amount;
+    onSuccess === onSuccessEnglish ? onSuccessEnglish() : onSuccessDutch();
+  } else {
+    onFail === onFailEnglish ? onFailEnglish() : onFailDutch();
+  }
 };
 
 /**

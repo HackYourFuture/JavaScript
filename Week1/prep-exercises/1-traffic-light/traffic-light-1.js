@@ -7,33 +7,30 @@ const trafficLight = {
   state: "green",
 };
 
-let rotations = 0;
-while (rotations < 6) {
-  function display() {
-    const currentState = trafficLight.state;
-    console.log("The traffic light is on", currentState);
-  }
-
-  const changeColor = () => {
-    if (trafficLight.state == "green") {
-      display();
-      trafficLight.state = "orange";
-    } else if (trafficLight.state == "orange") {
-      display();
-      trafficLight.state = "red";
-    } else {
-      display();
-      trafficLight.state = "green";
-    }
-  };
-  rotations++;
-  changeColor();
-
-  // TODO
-  // if the color is green, turn it orange
-  // if the color is orange, turn it red
-  // if the color is red, add 1 to rotations and turn it green
+function display() {
+  const currentState = trafficLight.state;
+  console.log("The traffic light is on", currentState);
 }
+
+const changeColor = () => {
+  if (trafficLight.state == "green") {
+    trafficLight.state = "orange";
+    setTimeout(display, 1000);
+  } else if (trafficLight.state == "orange") {
+    trafficLight.state = "red";
+    setTimeout(display, 3000);
+  } else {
+    trafficLight.state = "green";
+    setTimeout(display, 3000);
+  }
+};
+
+setInterval(changeColor, 2000);
+
+// TODO
+// if the color is green, turn it orange
+// if the color is orange, turn it red
+// if the color is red, add 1 to rotations and turn it green
 
 /**
  * The output should be:
