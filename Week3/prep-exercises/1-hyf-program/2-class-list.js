@@ -12,20 +12,41 @@ import { modules, students, mentors, classes } from "./hyf.js";
  *  [{ name: 'John', role: 'student' }, { name: 'Mary', role: 'mentor' }]
  */
 const getPeopleOfClass = (className) => {
-  console.log(modules, students, mentors, classes);
-  const subject = {};
-  classes.forEach(subj => {
-    if (subj.active) subject = subj.currentModule; return;
-  
-  });
-  let classMembers = [],student = {nam,role:'student'},teacher={nam,role:'mentor'};
-   student = students.filter(member => member.class === className);
-   teacher = mentors.filter(teacher => teacher.nowTeaching === subject);
-  classMembers.push(student);
-    classMembers.push(teachers);
-  return classMembers;
+  let subject,
+    student = [],
+    mentor = [],
+    classOf = [];
+  //let's get subject or currentModule of the selected class.
+
+  let currentClass = classes.find(
+    (clas) => clas.name === className && clas.active
+  );
+  subject = currentClass.currentModule;
+  //below we make it so that only if the class is active do we search the students and the mentors.
+  if (currentClass) {
+    activeClass();
+  } else {
+    return [];
+  }
+  //below there is a function that will gather students and mentors of the selelcted class and put them in an array.
+  function activeClass() {
+    student = students.filter((stud) => stud.class === className);
+
+    mentor = mentors.filter((ment) => ment.nowTeaching === subject);
+
+    student.map((cursist) => {
+      const { name } = cursist;
+      classOf.push({ name, role: "student" });
+    });
+    mentor.map((teacher) => {
+      const { name } = teacher;
+      classOf.push({ name, role: "mentor" });
+    });
+  }
+  return classOf;
+};
 // You can uncomment out this line to try your function
- console.log(getPeopleOfClass('class34'));
+console.log(getPeopleOfClass("class34"));
 
 /**
  * We would like to have a complete overview of the current active classes.
@@ -40,7 +61,16 @@ const getPeopleOfClass = (className) => {
  *  }
  */
 const getActiveClasses = () => {
-  console.log(modules, students, mentors, className);
+  let currentActiveClasses = {};
+
+  classes.forEach((clas) => {
+    if (clas.active) {
+      currentActiveClasses[clas.name] = getPeopleOfClass(clas.name);
+    }
+  });
+
+  return currentActiveClasses;
 };
+
 // You can uncomment out this line to try your function
-// console.log(getActiveClasses());
+console.log(getActiveClasses());
