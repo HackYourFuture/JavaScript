@@ -21,15 +21,19 @@ const getPeopleOfClass = (className) => {
   let currentClass = classes.find(
     (clas) => clas.name === className && clas.active
   );
-  subject = currentClass.currentModule;
-  //below we make it so that only if the class is active do we search the students and the mentors.
-  if (currentClass) {
-    activeClass();
+
+  //if the currentClass variable is not null, or undefined, then it means className is actually active and we will call the function, activeClass() to get the students and mentors of that class.
+  if (!currentClass) {
+    console.log(
+      "this class is graduated, hence no active students or mentors."
+    );
   } else {
-    return [];
+    activeClass();
   }
   //below there is a function that will gather students and mentors of the selelcted class and put them in an array.
+
   function activeClass() {
+    subject = currentClass.currentModule;
     student = students.filter((stud) => stud.class === className);
 
     mentor = mentors.filter((ment) => ment.nowTeaching === subject);
@@ -46,7 +50,7 @@ const getPeopleOfClass = (className) => {
   return classOf;
 };
 // You can uncomment out this line to try your function
-console.log(getPeopleOfClass("class34"));
+console.log(getPeopleOfClass("class32"));
 
 /**
  * We would like to have a complete overview of the current active classes.
