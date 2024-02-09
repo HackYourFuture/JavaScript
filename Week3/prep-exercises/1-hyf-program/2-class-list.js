@@ -12,25 +12,40 @@ import { modules, students, mentors, classes } from "./hyf.js";
  *  [{ name: 'John', role: 'student' }, { name: 'Mary', role: 'mentor' }]
  */
 const getPeopleOfClass = (className) => {
-  // TODO complete this function
-};
-// You can uncomment out this line to try your function
-// console.log(getPeopleOfClass('class34'));
+  const allPeople = [];
+  const currentModule = classes.find((el) => el.name === className ) ?.currentModule ;
 
-/**
- * We would like to have a complete overview of the current active classes.
- * First find the active classes, then for each get the people of that class.
- *
- * Should return an object with the class names as properties.
- * Each class name property contains an array identical to the return from `getPeopleFromClass`. So something like:
- *
- *  {
- *    class34: [{ name: 'John', role: 'student' }, { name: 'Mary', role: 'mentor' }],
- *    class35: [{ name: 'Jane', role: 'student' }, { name: 'Steve', role: 'mentor' }]
- *  }
- */
-const getActiveClasses = () => {
-  // TODO complete this function
+students.forEach((student)=>{
+  if(student.class == className && student.graduated == false){
+    
+    allPeople.push({name:student.name, role: 'student'})
+  }
+});
+
+mentors.forEach((mentor)=>{
+  if(mentor.nowTeaching === currentModule){
+    allPeople.push({name:mentor.name, role:'mentor'})
+   
+  }
+})
+return allPeople
 };
+
+
+// You can uncomment out this line to try your function
+console.log(getPeopleOfClass('class34'));
+
+const getActiveClasses = () => {
+  
+  const activeClasses = classes.filter((el) => el.active === true);
+
+  const activePeople = {};
+  activeClasses.forEach((el) => {
+    activePeople[el.name] = getPeopleOfClass(el.name);
+  });
+
+  return activePeople;
+}
+
 // You can uncomment out this line to try your function
 // console.log(getActiveClasses());
