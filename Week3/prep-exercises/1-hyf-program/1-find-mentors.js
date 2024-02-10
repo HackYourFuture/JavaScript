@@ -7,11 +7,20 @@ import { modules, students, mentors, classes } from "./hyf.js";
  * It should return an array of names. So something like:
  *  ['John', 'Mary']
  */
+
+
 const possibleMentorsForModule = (moduleName) => {
-  // TODO complete this function
+  const module = modules.find((mod) => mod.name === moduleName);
+  
+  const mentorsForModule = mentors.filter((mentor) =>
+    mentor.canTeach.includes(moduleName)
+  );
+
+  return mentorsForModule.map((mentor) => mentor.name);
+
 };
-// You can uncomment out this line to try your function
-// console.log(possibleMentorsForModule('using-apis'));
+
+console.log(possibleMentorsForModule('javascript'));
 
 /**
  * Tjebbe wants to make it even easier for himself.
@@ -19,8 +28,28 @@ const possibleMentorsForModule = (moduleName) => {
  *
  * It should return a single name.
  */
+
+function shuffleArray(array) {
+  for (let i = array.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]];
+  }
+  return array;
+}
+
 const findMentorForModule = (moduleName) => {
-  // TODO complete this function
-};
-// You can uncomment out this line to try your function
-// console.log(findMentorForModule('javascript'));
+  const module = modules.find((mod) => mod.name === moduleName);
+  
+  const mentorsForModule = mentors.filter((mentor) =>
+    mentor.canTeach.includes(moduleName)
+  );
+
+  const listOfMentorsForGivenModule = mentorsForModule.map((mentor) => mentor.name);
+
+
+  const shuffledMentors = shuffleArray(listOfMentorsForGivenModule);
+
+  return shuffledMentors[1];
+
+ }
+console.log(findMentorForModule('javascript')); 
