@@ -1,10 +1,12 @@
-import eurosFormatter from './euroFormatter.js';
+import eurosFormatter from "./euroFormatter.js";
 
 class Wallet {
   #name;
   #cash;
+  #dailyAllowance;
+  #dayTotalWithdrawals;
 
-  constructor(name, cash) {
+  constructor(name, cash, dailyAllowance = 40) {
     this.#name = name;
     this.#cash = cash;
   }
@@ -21,10 +23,27 @@ class Wallet {
     if (this.#cash - amount < 0) {
       console.log(`Insufficient funds!`);
       return 0;
+    } else if (amount >= this.#dailyAllowance) {
+      console.log("Amount requested exceeds the daily withdrawal limit");
+      return 0;
+    } else if (amount + this.#dayTotalWithdrawals > this.#dailyAllowance) {
+      console.log(
+        `you may withdraw maximum of ${this.#dailyAllowance} per day`
+      );
+      return 0;
     }
 
     this.#cash -= amount;
+    this.#dayTotalWithdrawals += amount;
     return amount;
+  }
+
+  resetDailyAllowance() {
+    this.#dayTotalWithdrawals = 0;
+  }
+
+  setDailyAllowance(newAllowance) {
+    this.#dailyAllowance = newAllowance;
   }
 
   transferInto(wallet, amount) {
@@ -45,9 +64,9 @@ class Wallet {
 }
 
 function main() {
-  const walletJack = new Wallet('Jack', 100);
-  const walletJoe = new Wallet('Joe', 10);
-  const walletJane = new Wallet('Jane', 20);
+  const walletJack = new Wallet("Jack", 100);
+  const walletJoe = new Wallet("Joe", 10);
+  const walletJane = new Wallet("Jane", 20);
 
   walletJack.transferInto(walletJoe, 50);
   walletJane.transferInto(walletJoe, 25);
