@@ -13,9 +13,12 @@ import { modules, students, mentors, classes } from "./hyf.js";
  */
 const getPeopleOfClass = (className) => {
   const allPeople = [];
-  const currentModule = classes.find((el) => el.name === className ) ?.currentModule ;
+  const currentClass = classes.find((el) => el.name === className ) ;
+ const isActive = currentClass.active === true
+ if (!isActive) return []
 
-students.forEach((student)=>{
+
+ students.forEach((student)=>{
   if(student.class == className && student.graduated == false){
     
     allPeople.push({name:student.name, role: 'student'})
@@ -23,7 +26,7 @@ students.forEach((student)=>{
 });
 
 mentors.forEach((mentor)=>{
-  if(mentor.nowTeaching === currentModule){
+  if(mentor.nowTeaching === currentClass.currentModule){
     allPeople.push({name:mentor.name, role:'mentor'})
    
   }
@@ -33,7 +36,13 @@ return allPeople
 
 
 // You can uncomment out this line to try your function
+console.log(getPeopleOfClass('class32'));
+console.log(getPeopleOfClass('class33'));
+
 console.log(getPeopleOfClass('class34'));
+console.log(getPeopleOfClass('class35'));
+
+console.log(getPeopleOfClass('class36'));
 
 const getActiveClasses = () => {
   
