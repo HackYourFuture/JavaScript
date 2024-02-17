@@ -6,9 +6,11 @@ class Wallet {
   #dailyAllowance;
   #dayTotalWithdrawals;
 
-  constructor(name, cash, dailyAllowance = 40) {
+  constructor(name, cash) {
     this.#name = name;
     this.#cash = cash;
+    this.#dailyAllowance = 40;
+    this.#dayTotalWithdrawals = 0;
   }
 
   get name() {
@@ -23,10 +25,8 @@ class Wallet {
     if (this.#cash - amount < 0) {
       console.log(`Insufficient funds!`);
       return 0;
-    } else if (amount >= this.#dailyAllowance) {
-      console.log("Amount requested exceeds the daily withdrawal limit");
-      return 0;
-    } else if (amount + this.#dayTotalWithdrawals > this.#dailyAllowance) {
+    }
+    if (amount + this.#dayTotalWithdrawals > this.#dailyAllowance) {
       console.log(
         `you may withdraw maximum of ${this.#dailyAllowance} per day`
       );

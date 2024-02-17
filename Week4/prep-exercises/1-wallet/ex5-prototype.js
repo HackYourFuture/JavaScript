@@ -1,10 +1,10 @@
 import eurosFormatter from "./euroFormatter.js";
 
-function Wallet(name, cash, dailyAllowance = 40) {
+function Wallet(name, cash) {
   this._name = name;
   this._cash = cash;
-  this._dailyAllowance = dailyAllowance;
-  this._dayTotalWithdrawals;
+  this._dailyAllowance = 40;
+  this._dayTotalWithdrawals = 0;
 }
 
 Wallet.prototype.resetDailyAllowance = function () {
@@ -23,11 +23,9 @@ Wallet.prototype.withdraw = function (amount) {
   if (this._cash - amount < 0) {
     console.log(`Insufficient funds!`);
     return 0;
-  } else if (amount >= this._dailyAllowance) {
-    console.log("Amount requested exceeds the daily withdrawal limit");
-    return 0;
-  } else if (amount + this._dayTotalWithdrawals > this._dailyAllowance) {
-    console.log(`you may withdraw maximum of ${dailyAllowance} per day`);
+  }
+  if (amount + this._dayTotalWithdrawals > this._dailyAllowance) {
+    console.log(`you may withdraw maximum of ${this._dailyAllowance} per day`);
     return 0;
   }
 
@@ -65,6 +63,7 @@ function main() {
   walletJane.transferInto(walletJoe, 25);
 
   walletJane.deposit(20);
+  walletJack.withdraw(1000);
   walletJane.transferInto(walletJoe, 25);
 
   walletJack.reportBalance();

@@ -8,10 +8,8 @@ function withdraw(amount) {
   if (this._cash - amount < 0) {
     console.log(`Insufficient funds!`);
     return 0;
-  } else if (amount >= this._dailyAllowance) {
-    console.log("Amount requested exceeds the daily withdrawal limit");
-    return 0;
-  } else if (amount + this._dayTotalWithdrawals > this._dailyAllowance) {
+  }
+  if (amount + this._dayTotalWithdrawals > this._dailyAllowance) {
     console.log(`you may withdraw maximum of ${this._dailyAllowance} per day`);
     return 0;
   }
@@ -53,7 +51,7 @@ function createWallet(name, cash = 0) {
   return {
     _name: name,
     _cash: cash,
-    _dayTotalWithdrawals,
+    _dayTotalWithdrawals: 0,
     _dailyAllowance: 40,
     deposit,
     withdraw,
