@@ -6,7 +6,10 @@
  */
 
 let myString = 'hello,this,is,a,difficult,to,read,sentence';
-
+// first solution
+myString=myString.split(',').join(' ')
+// second solution
+myString=myString.replace(/,/g,' ')
 
 
 /* --- Code that will test your solution, do NOT change. Write above this line --- */
