@@ -12,3 +12,20 @@
  *   Ingredients: 4 eggs, 2 strips of bacon, 1 tsp salt/pepper
  */
 
+const mealrecipe={
+    title:"Omelette",
+    Servings:2,
+    Ingredients:["4eggs","2 strips of bacon","1 tsp salt/pepper"]
+}
+for(let i in mealrecipe){
+    if(i=='title'){
+    console.log(`Meal name:${mealrecipe[i]}`)
+}
+else if(i=='Servings'){
+    console.log(`Serves :${mealrecipe[i]}`);
+    
+}
+else{
+    console.log(`${i}:${mealrecipe[i]}`);
+    
+}}
