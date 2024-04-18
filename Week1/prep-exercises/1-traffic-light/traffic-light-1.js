@@ -3,20 +3,32 @@
  * The `state` property says what the traffic light's state (i.e. colour) is at
  * that moment.
  */
+
 const trafficLight = {
   state: "green",
 };
 
 let rotations = 0;
 while (rotations < 2) {
-  const currentState = trafficLight.state;
+  let currentState = trafficLight.state;
   console.log("The traffic light is on", currentState);
-
-  // TODO
-  // if the color is green, turn it orange
-  // if the color is orange, turn it red
-  // if the color is red, add 1 to rotations and turn it green
+  if (currentState === "green") {
+    trafficLight.state = "orange";
+  } else if (currentState === "orange") {
+    trafficLight.state = "red";
+  } else if ((currentState = "red")) {
+    trafficLight.state = "green";
+    rotations++;
+    console.log("---------------------");
+    console.log(`complete ${rotations} rotations`);
+    console.log("---------------------");
+  }
 }
+
+// TODO
+// if the color is green, turn it orange
+// if the color is orange, turn it red
+// if the color is red, add 1 to rotations and turn it green
 
 /**
  * The output should be:
