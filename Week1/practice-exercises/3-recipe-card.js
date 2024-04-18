@@ -18,7 +18,7 @@ const mealrecipe={
     Ingredients:["4eggs","2 strips of bacon","1 tsp salt/pepper"]
 }
 for(let i in mealrecipe){
-    if(i=='title'){
+    if(i==='title'){
     console.log(`Meal name:${mealrecipe[i]}`)
 }
 else if(i=='Servings'){

@@ -19,8 +19,9 @@ if(trafficLight.stateIndex === 0){
   trafficLight.stateIndex = 2
 } else if(
   trafficLight.stateIndex === 2){
-    cycle++
+    
     trafficLight.stateIndex = 0
+    cycle +=1
 }
 console.log(` The traffic light is on ${currentState}`)
 }
