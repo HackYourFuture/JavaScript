@@ -9,3 +9,24 @@
 
 // There are 3 different types of drinks:
 const drinkTypes = ['cola', 'lemonade', 'water'];
+
+const drinkTray = [];
+const drinkLimits = { cola: 0, lemonade: 0, water: 0 };
+const maxPerDrink = 2;
+
+for (let i = 0; i < 5; i++) {
+    let drinkAdded = false;
+    while (!drinkAdded) {
+        // Randomly select a drink from the drinkTypes array
+        const drink = drinkTypes[Math.floor(Math.random() * drinkTypes.length)];
+
+        // Check if we can add this drink to the tray
+        if (drinkLimits[drink] < maxPerDrink) {
+            drinkTray.push(drink);
+            drinkLimits[drink] += 1;
+            drinkAdded = true;
+        }
+    }
+}
+
+console.log(`Hey guys, I brought a ${drinkTray.join(', ')}!`);

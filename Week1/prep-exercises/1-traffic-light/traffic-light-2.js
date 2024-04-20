@@ -1,6 +1,6 @@
 "use strict";
 /**
- * The `possibleStates` property define the states (in this case: colours)
+ * The `possibleStates` property defines the states (in this case: colours)
  * in which the traffic light can be.
  * The `stateIndex` property indicates which of the possible states is current.
  */
@@ -18,6 +18,14 @@ while (cycle < 2) {
   // if the color is green, turn it orange
   // if the color is orange, turn it red
   // if the color is red, add 1 to cycles and turn it green
+  if (currentState === "green") {
+    trafficLight.stateIndex ++;
+  } else if (currentState === "orange") {
+    trafficLight.stateIndex ++;
+  } else if (currentState === "red") {
+    cycle ++;
+    trafficLight.stateIndex = 0;
+  }
 }
 
 /**

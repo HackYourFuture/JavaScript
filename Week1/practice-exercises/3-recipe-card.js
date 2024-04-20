@@ -12,3 +12,27 @@
  *   Ingredients: 4 eggs, 2 strips of bacon, 1 tsp salt/pepper
  */
 
+
+const recipe = {};
+recipe.title = "Omelette";
+recipe.servings = 2;
+recipe.ingredients = ["4 eggs", "2 strips of bacon", "1 tsp salt/pepper"];
+
+for (const key in recipe) {
+    //switch for more descriptive logging
+    switch(key) {
+        case 'title':
+            console.log(`Meal name: ${recipe[key]}`);
+            break;
+        case 'servings':
+            console.log(`Serves: ${recipe[key]}`);
+            break;
+        case 'ingredients':
+            console.log(`Ingredients: ${recipe[key].join(', ')}`);
+            break;
+        default:
+            console.log(`${key}: ${recipe[key]}`);
+            break;
+    }
+}
+

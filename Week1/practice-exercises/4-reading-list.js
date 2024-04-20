@@ -9,3 +9,13 @@
  *  If you haven't read it log a string like You still need to read "The Lord of the Rings"
  */
 
+const books= [
+    { title: "The Hobbit", author: "J.R.R. Tolkien", alreadyRead: false },
+    { title: "The Comedy Bible", author: "J. Carter", alreadyRead: true },
+    { title: "The Enchiridion", author: "Epictetus", alreadyRead: false }
+];
+
+for (book of books) {
+    const status = book.alreadyRead === true? 'You have already read':'You still need to read';
+    console.log(`${status} ${book.title} by ${book.author}.`);
+}
