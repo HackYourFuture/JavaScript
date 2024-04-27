@@ -28,7 +28,7 @@ valueCounts[randomNumber-1]++;
   // 3. Then push that string onto the `results` array.
   for(let element of valueCounts){
     const percentage=  ((element/sampleSize)*100).toFixed(2);
-    results.push(percentage)
+    results.push(percentage);
   }
   return results;
 }
