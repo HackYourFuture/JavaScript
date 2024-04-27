@@ -11,4 +11,9 @@ In this prep exercise we are using the `Math.random()` function to simulate thro
 ## Things to think about
 
 - The `valueCounts` is implemented as an array. Do you think there is another way to store this? Why do you think the decision was made to go with an array?
+  - An object or map could be used to make the code more readable (since it allows to write the 'key: value' pairs, with dice value and count of times the value was thrown)
+  - But since the function is not super intricate, it's still easy to read. So I'd leave it as it is.
 - What do you think about the code division? Would you add another function or maybe remove one? Why?
+  - I wouldn't add any other functions, I'd use as fewer lines of code as possible
+  - Adding more functions could unnecessarily overcomplicate things. 
+  - With more abstraction, the function would work slower: more abstraction means more time to communicate between separate logic units
