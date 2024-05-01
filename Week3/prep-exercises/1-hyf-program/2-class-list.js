@@ -11,11 +11,46 @@ import { modules, students, mentors, classes } from "./hyf.js";
  *
  *  [{ name: 'John', role: 'student' }, { name: 'Mary', role: 'mentor' }]
  */
+
 const getPeopleOfClass = (className) => {
-  // TODO complete this function
+  // about filtering classes if we have true active class
+  let filterActiveClass = classes.filter((n) => n.active).map((m) => m.name);
+
+  // get the filtering student and push in the filtering class and say the name of student and role and the name of class
+  let filterAbleStudent = students
+    .filter((n) => filterActiveClass.includes(n.class))
+    .map((m) => ({ name: m.name, role: " student", class: m.class }));
+
+
+    // get the declare one variable which student can attend the class
+  let canAttend = 0;
+  // put class in the c and name of the class and true in the active push in the class name 
+  for (let c of classes) {
+    if (c.name === className && c.active) {
+      // if we push all of the available class push all of them in the attend class
+      canAttend = c.currentModule;
+    }
+  }
+// declare oe array empty because we need list of name for mentors available now for teaching
+  let filterAbleMentor = [];
+  if (canAttend) {
+    filterAbleMentor = mentors
+      .filter((n) => n.nowTeaching === canAttend)
+      .map((m) => ({
+        name: m.name,
+        role: "mentor",
+        nowTeaching: m.nowTeaching
+      }));
+  }
+
+  let add = filterAbleStudent.concat(filterAbleMentor);
+  return add;
 };
 // You can uncomment out this line to try your function
-// console.log(getPeopleOfClass('class34'));
+console.log(getPeopleOfClass("class34"));
+// console.log(getPeopleOfClass("class35"));
+// console.log(getPeopleOfClass("class36"));
+
 
 /**
  * We would like to have a complete overview of the current active classes.
@@ -30,7 +65,15 @@ const getPeopleOfClass = (className) => {
  *  }
  */
 const getActiveClasses = () => {
-  // TODO complete this function
+  let overview ={};
+for(let i = 0 ; i < classes.length ; i++){
+    if(classes[i].active){
+        let addEnd = getPeopleOfClass(classes[i].name);
+        overview[classes[i].name] = addEnd;
+    }
+}
+return overview;
 };
 // You can uncomment out this line to try your function
-// console.log(getActiveClasses());
+console.log(getActiveClasses());
+
