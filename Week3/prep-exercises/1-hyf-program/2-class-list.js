@@ -13,9 +13,31 @@ import { modules, students, mentors, classes } from "./hyf.js";
  */
 const getPeopleOfClass = (className) => {
   // TODO complete this function
+
+  //filtering students whic has the provided class name
+  const studentArray=students.filter(student=>student.class===className)
+   //finding claass object with the provided classname
+   const wantedClassObject= classes.find(classItem=>classItem.name===className)
+   //filtering mentors who are able to teach the module as same as the module of given class
+  const wantedMentors = mentors.filter(mentor=>mentor.nowTeaching===wantedClassObject.currentModule)
+  const peopleOfClass=[]
+  //iteration over each element of stutdentArray   in this case there is just one student match with the provided classname    
+  studentArray.forEach(student =>{
+        peopleOfClass.push({ name: student.name, role: "student" }) //storing an object of student info
+      })
+   wantedMentors.forEach(mentor=>{
+    peopleOfClass.push({ name: mentor.name, role: "mentor" })//storing mentor info
+   })
+   
+   
+
+return peopleOfClass
+
+
 };
 // You can uncomment out this line to try your function
-// console.log(getPeopleOfClass('class34'));
+console.log(getPeopleOfClass('class34'));
+
 
 /**
  * We would like to have a complete overview of the current active classes.
@@ -31,6 +53,25 @@ const getPeopleOfClass = (className) => {
  */
 const getActiveClasses = () => {
   // TODO complete this function
+
+  //filtering active claaases by filter() array function
+  const activeClasses = classes.filter(classItem => classItem.active == true);
+
+  // Use reduce() function to  to accumulate the result
+  const activeClassesWithPeople = activeClasses.reduce((accumulatedResult, classItem) => {
+    // Get people of the current class
+    const activePeople = getPeopleOfClass(classItem.name);
+    
+    // Add people to the accumulatedResult object with class name as key
+    accumulatedResult[classItem.name] = activePeople;
+
+    return accumulatedResult;
+  }, {});
+
+  // Return the object with active classes and people
+  return activeClassesWithPeople;
 };
 // You can uncomment out this line to try your function
-// console.log(getActiveClasses());
+
+ console.log(getActiveClasses());
+

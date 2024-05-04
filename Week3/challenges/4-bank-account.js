@@ -26,12 +26,33 @@ const bankAccount = {
     },
   ],
 };
+const createPayment = (amount, onSuccess, onFail,reason) => {
+  // TODO complete this function
+  let { currentBalance, transactions } = bankAccount;
+  let newAmount=currentBalance-amount;
+  if(newAmount<0){
+    onFail()
+    return;  //immediately exit from the function  saves time
+  }else{
+    transactions.push({prevAmount:currentBalance,
+       newAmount,
+        reason })
+        currentBalance=newAmount
+    onSuccess()
+  }
+  
+
+};
 
 const donateMoney = (amount, onSuccess, onFail) => {
   // TODO complete this function
+  createPayment(amount, onSuccess, onFail, "Donation")
+
 };
 const payRent = (amount, onSuccess, onFail) => {
   // TODO complete this function
+  createPayment(amount, onSuccess, onFail, "Rent")
+
 };
 
 /**

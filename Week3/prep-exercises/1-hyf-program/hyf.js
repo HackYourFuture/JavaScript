@@ -16,7 +16,7 @@ export const classes = [
     active: false,
     graduationDate: "7-11-2021",
   },
-  {
+  {     
     name: "class33",
     startDate: "28-5-2021",
     active: false,
