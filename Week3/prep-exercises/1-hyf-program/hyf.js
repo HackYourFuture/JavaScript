@@ -1,3 +1,4 @@
+//Week3/prep-exercises/1-hyf-program/hyf.js
 export const modules = [
   { name: "html-css", displayName: "HTML/CSS" },
   { name: "javascript", displayName: "JavaScript" },

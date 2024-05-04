@@ -1,3 +1,4 @@
+//Week3/prep-exercises/1-hyf-program/1-find-mentors.js
 import { modules, students, mentors, classes } from "./hyf.js";
 
 /**
@@ -8,10 +9,15 @@ import { modules, students, mentors, classes } from "./hyf.js";
  *  ['John', 'Mary']
  */
 const possibleMentorsForModule = (moduleName) => {
-  // TODO complete this function
+    return mentors.reduce((newArray, mentor) => {
+        if (mentor.canTeach.includes(moduleName)) {
+            newArray.push(mentor.name);
+        }
+        return newArray; // returns array on each reduce iteration
+    }, []); // has an array output
 };
 // You can uncomment out this line to try your function
-// console.log(possibleMentorsForModule('using-apis'));
+console.log(possibleMentorsForModule('using-apis'));
 
 /**
  * Tjebbe wants to make it even easier for himself.
@@ -19,8 +25,21 @@ const possibleMentorsForModule = (moduleName) => {
  *
  * It should return a single name.
  */
+
+/** Helper function `getRandomIndex` to generate a random integer between 0 and specified max value
+ *
+ * @param {number} max - an upper limit for random number generation, exclusive
+ * @returns {number} random integer between 1 and `max-1`
+ */
+const getRandomIndex = max => (Math.floor(Math.random() * max));
+
 const findMentorForModule = (moduleName) => {
-  // TODO complete this function
+    const possibleMentors = possibleMentorsForModule(moduleName);
+    if (possibleMentors.length === 0) {
+        return `No mentors available for the module ${moduleName}`
+    }
+    const randomIndex = getRandomIndex(possibleMentors.length)
+    return possibleMentors[randomIndex]
 };
 // You can uncomment out this line to try your function
-// console.log(findMentorForModule('javascript'));
+console.log(findMentorForModule('javascript'));
