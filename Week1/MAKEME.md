@@ -16,7 +16,7 @@ Practice, practice, practice. This week you are not handing in any assignment, b
 In this section you will be doing interactive exercises, that will allow you to practice with the concepts you've learned about this week! We provide a lot of possible exercises here and you probably can't do everything, but do as many as you need to feel comfortable with the concepts. Also feel free to come back to them later.
 
 - Do all parts of [Codecademy: Arrays](https://www.codecademy.com/courses/introduction-to-javascript/lessons/arrays) (Signup required!)
-- Do 5 exercises of [FreeCodeCamp: Basic data structures](https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/basic-data-structures)
+- Do 5 exercises of [FreeCodeCamp: Basic data structures](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/#basic-data-structures)
 - [Codecademy: Functions ](https://www.codecademy.com/courses/introduction-to-javascript/lessons/functions)
 - [JSchallenger](https://www.jschallenger.com/) - Do all of the Javascript Basics section except for `scope` and `asynchronous javascript`.
 - There is a practice-exercises folder in this week's repository that is filled with exercises to try out. The solutions are in a separate folder so you can check if you did it correctly. Clone this repository to your computer and have a go!
