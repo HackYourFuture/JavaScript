@@ -46,7 +46,7 @@ If you have any questions or if something is not entirely clear ¯\\\_(ツ)\_/¯
 ## Before you start
 
 1. You get assigned a mentor at the start of the module in the slack group chat. (S)He is responsible for reviewing your work for the duration of the module.
-2. Please don't hesitate to contact Joséphine or the cohort supervisor if you are facing any issues. We are here to help you out!
+2. Please don't hesitate to contact your mentor or the education director if you are facing any issues. We are here to help you out!
 
 ## Review process
 
