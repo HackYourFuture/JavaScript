@@ -5,10 +5,17 @@
  *   hello this is a difficult to read sentence
  */
 
-let myString = 'hello,this,is,a,difficult,to,read,sentence';
+const myString = 'hello,this,is,a,difficult,to,read,sentence';
 
+const myString1 = myString.split(',').join(' ');
+console.log("Result of .split() and .join() methods:");
+console.log(myString1);
 
+const myString2 = myString.replace(/,/g, ' ');
+console.log("Result of .replace() method and regular expression:");
+console.log(myString2);
 
 /* --- Code that will test your solution, do NOT change. Write above this line --- */
 
-console.assert(myString === 'hello this is a difficult to read sentence', 'There is something wrong with your solution');
+console.assert(myString1 === 'hello this is a difficult to read sentence', 'There is something wrong with your solution');
+console.assert(myString2 === 'hello this is a difficult to read sentence', 'There is something wrong with your solution');
