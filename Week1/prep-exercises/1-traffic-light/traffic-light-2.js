@@ -1,23 +1,37 @@
 "use strict";
 
-const trafficLight = {
-  possibleStates: ["green", "orange", "red"],
-  stateIndex: 0,
+const trafficlight = { 
+    possibleStates : [ "green", "orange", "red"],
+    stateIndex :0,
 };
-
 let cycle = 0;
-while (cycle < 2) {
-  const currentState = trafficLight.possibleStates[trafficLight.stateIndex];
-  console.log("The traffic light is on", currentState);
+function updateTrafficLight() {
+    const currentState = trafficlight.possibleStates[trafficlight.stateIndex];
+    const trafficLightElement = document.getElementById("traffic-light");
+    trafficLightElement.textContent = `The traffic light is on ${currentState}`;
+    trafficLightElement.className = "";
+    trafficLightElement.classList.add(currentState);
 
-  if (currentState === "green")
-     {  trafficLight.stateIndex = 1; 
-      } else if (currentState === "orange") 
-        {  trafficLight.stateIndex = 2 ;
+    if (currentState === "green") {
+        trafficlight.stateIndex = 1;
 
-        } else if (currentState === "red") { 
-         trafficLight.stateIndex = 0; 
-         
-         cycle++;
-         } 
-        }
+    }
+  else if(currentState === "orange") {
+    trafficlight.stateIndex = 2;
+
+  }
+  else if(currentState === "red") {
+    trafficlight.stateIndex = 0;
+    cycle++;
+  }
+
+  if (cycle < 3) {
+    setTimeout(updateTrafficLight, 1000);
+
+  }
+  else {
+    trafficLightElement.textContent = "Traffic light simulation compeleted." ;
+  }
+}
+
+updateTrafficLight();
