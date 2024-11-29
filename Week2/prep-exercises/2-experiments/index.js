@@ -3,7 +3,10 @@
 function runExperiment(sampleSize) {
   const valueCounts = [0, 0, 0, 0, 0, 0];
 
-  // TODO
+    for (let i = 0; i < sampleSize; i++) {
+      const randomValue = Math.floor(Math.random() * 6) + 1;
+      valueCounts[randomValue - 1]++;
+    }
   // Write a for loop that iterates `sampleSize` times (sampleSize is a number).
   // In each loop iteration:
   //
@@ -15,7 +18,11 @@ function runExperiment(sampleSize) {
 
   const results = [];
 
-  // TODO
+    for (let i = 0; i < valueCounts.length; i++) {
+      const percentage =((valueCounts[i] / sampleSize) * 100).toFixed(2);
+      results.push(`${percentage}`);
+    }
+     
   // Write a for..of loop for the `valueCounts` array created in the previous
   // loop. In each loop iteration:
   // 1. For each possible value of the die (1-6), compute the percentage of how
@@ -31,7 +38,11 @@ function runExperiment(sampleSize) {
 function main() {
   const sampleSizes = [100, 1000, 1000000];
 
-  // TODO
+ for (const sampleSize of sampleSizes) {
+  const results = runExperiment(sampleSize);
+  console.log(`${results.join(', ')}`, sampleSize);
+ }
+
   // Write a for..of loop that calls the `runExperiment()` function for each
   // value of the `sampleSizes` array.
   // Log the results of each experiment as well as the experiment size to the
