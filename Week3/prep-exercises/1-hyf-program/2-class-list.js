@@ -11,9 +11,23 @@ import { modules, students, mentors, classes } from "./hyf.js";
  *
  *  [{ name: 'John', role: 'student' }, { name: 'Mary', role: 'mentor' }]
  */
-const getPeopleOfClass = (className) => {
-  // TODO complete this function
+const getPeopleOfClass = (className) => 
+  {
+      const classObj = classes.find(c => c.name === className);
+    if (!classObj) {
+      console.error(`Class "${className}" not found.`);
+      return [];
+    };
+
+      const currentModule = classObj.currentModule;
+      const teachingMentors = mentors
+        .filter(mentor => mentor.nowTeaching === currentModule)
+        .map(mentor => ({ name: mentor.name, role: 'mentor' }));
+      const classStudents = classObj.students.map(student => ({ name: student, role: 'student' }));
+    
+      return [...classStudents, ...teachingMentors];
 };
+
 // You can uncomment out this line to try your function
 // console.log(getPeopleOfClass('class34'));
 
@@ -30,7 +44,14 @@ const getPeopleOfClass = (className) => {
  *  }
  */
 const getActiveClasses = () => {
-  // TODO complete this function
+  const activeClasses = classes.filter(c => c.active);
+  const result = {};
+  activeClasses.forEach(classObj => {
+    result[classObj.name] = getPeopleOfClass(classObj.name);
+  });
+
+  return result;
+
 };
 // You can uncomment out this line to try your function
 // console.log(getActiveClasses());
