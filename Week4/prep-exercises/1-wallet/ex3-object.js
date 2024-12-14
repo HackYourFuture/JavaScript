@@ -1,11 +1,17 @@
 import eurosFormatter from './euroFormatter.js';
 
 function createWallet(name, cash = 0) {
+  let dailyAllowance = 40;
+  let dayTotalWithdrawals = 0;
   return {
     _name: name,
     _cash: cash,
+    dailyAllowance,
+    dayTotalWithdrawals,
 
-    deposit: function (amount) {
+    
+
+    deposit(amount) {
       this._cash += amount;
     },
 
@@ -16,18 +22,26 @@ function createWallet(name, cash = 0) {
       }
 
       this._cash -= amount;
+      this.dayTotalWithdrawals += amount;
       return amount;
     },
 
     transferInto: function (wallet, amount) {
-      console.log(
-        `Transferring ${eurosFormatter.format(amount)} from ${
-          this._name
-        } to ${wallet.getName()}`
-      );
+      
       const withdrawnAmount = this.withdraw(amount);
       wallet.deposit(withdrawnAmount);
     },
+     resetDailyAllowance() {
+      this.dayTotalWithdrawals = 0;
+    },
+
+    setDailyAllowance(newAllowance) {
+      this.dailyAllowance = newAllowance;
+      console.log(`Daily allowance set to: ${newAllowance}`);
+    },
+
+
+    
 
     reportBalance: function () {
       console.log(
