@@ -6,7 +6,7 @@ From Wikipedia:
 
 > The Game of Life, also known simply as Life, is a cellular automaton devised by the British mathematician John Horton Conway in 1970. It is a zero-player game, meaning that its evolution is determined by its initial state, requiring no further input. One interacts with the Game of Life by creating an initial configuration and observing how it evolves.
 
-As illustrated in the picture below, the game is a two-dimensional grid where cells come alive and die, depending on certain rules. These rules as summarized in the Wikipedia article as follow:
+As illustrated in the picture below, the game is a two-dimensional grid where cells come alive and die, depending on certain rules. These rules as summarized in the Wikipedia article as follows:
 
 1. Any live cell with two or three live neighbors survives.
 2. Any dead cell with three live neighbors becomes a live cell.
@@ -27,7 +27,7 @@ This class represents a single cell.
 <!--prettier-ignore-->
 | Methods  | Description |
 |----------|-------------|
-| constructor() | Initializes the cell's `x` and `y` coordinates from arguments passed to the constructor. It randomly sets the initial `alive` boolean state of the cell and initializes it next `alive` state. |
+| constructor() | Initializes the cell's `x` and `y` coordinates from arguments passed to the constructor. It randomly sets the initial `alive` boolean state of the cell and initializes its next `alive` state. |
 | draw() | Draws the cell on the canvas. The visual representation depends on whether the cell is alive or dead. |
 
 ### `class Grid`
@@ -37,9 +37,9 @@ This class manages the game grid, made up of cells.
 <!--prettier-ignore-->
 | Methods  | Description |
 |----------|-------------|
-| `constructor()` | Creates a two-dimensional array (i.e., an array of arrays) that represents a grid of cells that evolve over time. It keeps a reference the to the canvas context unto which cells will be drawn. |
-| `forEachCell()` | Executes a callback function for each cell in the two-dimensional grid array, passing the cell as parameter to the callback. |
-| `isAlive()` | Determines whether a cell at the given coordinates is alive or dead. The coordinates could potentially be off-grid. Off-grid cells are presumed dead. The function returns one if the given cell is alive or zero if its dead. |
+| `constructor()` | Creates a two-dimensional array (i.e., an array of arrays) that represents a grid of cells that evolve over time. It keeps a reference to the canvas context unto which the cells will be drawn. |
+| `forEachCell()` | Executes a callback function for each cell in the two-dimensional grid array, passing the cell as a parameter to the callback. |
+| `isAlive()` | Determines whether a cell at the given coordinates is alive or dead. The coordinates could potentially be off-grid. Off-grid cells are presumed to be dead. The function returns one if the given cell is alive or zero if its dead. |
 | `countLivingNeighbors()` | Counts the number of living neighbors for a given cell. Each cell has eight neighbors, some of which may be off-grid if the cell is located at an edge or a corner of the grid. |
 | `update()` | Iterates through all cells of the grid and computes the new state of each cell by applying the rules of the Game Of Life. |
 | `render()` | Iterates through all cells of the grid and draws each cell onto the canvas. |
@@ -49,18 +49,16 @@ This class manages the game grid, made up of cells.
 <!--prettier-ignore-->
 | Methods  | Description |
 |----------|-------------|
-| `gameLoop()` | Executes one life cycle of the game (i.e., `updateGrid()` followed by `renderGrid()`) and then reschedules itself to run again after a delay. |
-| `start()` | The `start()` function creates the initial grid, renders it to the web page by calling `renderGrid()` and calls `gameLoop()` to kickstart the game. |
+| `gameLoop()` | Executes one life cycle of the game (i.e., `grid.render()` followed by `grid.update()`) and then reschedules itself to run again after a delay. |
+| `start()` | The `start()` method calls `gameLoop()` to kickstart the game. |
 
-The `main()` function gets a reference to the `canvas` element hard-coded in the `index.html` file and instantiates a `Game` object.
+The `main()` function gets a reference to the `canvas` element hard-coded in the `index.html` file and instantiates a `Game` object, passing the canvas reference to the `Game` constructor.
 
 The diagram below visualizes the overall call hierarchy of the various classes and methods.
 
 ![Game of Life Call Graph](../../../assets/GameOfLife.png)
 
-The `start()` method creates the initial grid and calls `gameLoop()` to kickstart the game.
-
-The `gameLoop()` method calls `grid.update()` to update (each cell of) the grid according to the game rules (see above) and the calls `grid.render()` to render the updated grid to the web page. It then schedules a call to itself using `setTimeout()`. This causes the game to keep evolving the grid according to the game rules every 200ms until the page is closed.
+The `gameLoop()` method calls `grid.update()` to update (each cell of) the grid according to the game rules (see above) and calls `grid.render()` to render the updated grid to the web page. It then schedules a call to itself using `setTimeout()`. This causes the game to keep evolving the grid according to the game rules every 200ms until the page is closed.
 
 Note: The use of [`window.requestAnimationFrame()`](https://developer.mozilla.org/en-US/docs/Web/API/window/requestAnimationFrame) is not essential for the functioning of the game but helps to avoid screen flicker.
 
@@ -85,7 +83,7 @@ In the supplied JavaScript code the color of all living cells is a single shade 
    |    3     |  0.75   |
    |    4+    |    1    |
 
-3. In `update` method of the `Grid` class add code to update the `lifeTime` value of each cell:
+3. In the `update` method of the `Grid` class add code to update the `lifeTime` value of each cell:
 
    - A living cell that remains living should have its `lifeTime` incremented by one.
    - A living cell that dies should have its `lifeTime` reset to zero.
