@@ -37,4 +37,21 @@ export default class Cell {
       );
     }
   }
+
+  liveAndLetDie(aliveNeighbors) {
+    if (aliveNeighbors === 2) {
+      // Living cell remains living, dead cell remains dead
+      this.nextAlive = this.alive;
+    } else if (aliveNeighbors === 3) {
+      // Dead cell becomes living, living cell remains living
+      this.nextAlive = true;
+    } else {
+      // Living cell dies, dead cell remains dead
+      this.nextAlive = false;
+    }
+  }
+
+  update() {
+    this.alive = this.nextAlive;
+  }
 }

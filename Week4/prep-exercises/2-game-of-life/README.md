@@ -29,6 +29,8 @@ This class represents a single cell.
 |----------|-------------|
 | constructor() | Initializes the cell's `x` and `y` coordinates from arguments passed to the constructor. It randomly sets the initial `alive` boolean state of the cell and initializes its next `alive` state. |
 | draw() | Draws the cell on the canvas. The visual representation depends on whether the cell is alive or dead. |
+| liveAndLetDie() | Determines the next state (alive or dead) depending on the number of living neighbors of the cell, by applying the rules of the Game Of Life. |
+| update() | Updates the state of the cell (alive or dead) as set previously by `liveAndLetDie()`.
 
 ### `class Grid`
 
@@ -41,7 +43,7 @@ This class manages the game grid, made up of cells.
 | `forEachCell()` | Executes a callback function for each cell in the two-dimensional grid array, passing the cell as a parameter to the callback. |
 | `isAlive()` | Determines whether a cell at the given coordinates is alive or dead. The coordinates could potentially be off-grid. Off-grid cells are presumed to be dead. The function returns one if the given cell is alive or zero if its dead. |
 | `countLivingNeighbors()` | Counts the number of living neighbors for a given cell. Each cell has eight neighbors, some of which may be off-grid if the cell is located at an edge or a corner of the grid. |
-| `update()` | Iterates through all cells of the grid and computes the new state of each cell by applying the rules of the Game Of Life. |
+| `update()` | Iterates through all cells of the grid and computes the new state of each cell. |
 | `render()` | Iterates through all cells of the grid and draws each cell onto the canvas. |
 
 ### `class Game`
@@ -83,7 +85,7 @@ In the supplied JavaScript code the color of all living cells is a single shade 
    |    3     |  0.75   |
    |    4+    |    1    |
 
-3. In the `update` method of the `Grid` class add code to update the `lifeTime` value of each cell:
+3. In the `liveAndLetDie()` method of the `Cell` class add code to update the `lifeTime` value of each cell:
 
    - A living cell that remains living should have its `lifeTime` incremented by one.
    - A living cell that dies should have its `lifeTime` reset to zero.
