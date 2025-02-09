@@ -52,23 +52,11 @@ export default class Grid {
 
   update() {
     this.forEachCell((cell) => {
-      const numAlive = this.countLivingNeighbors(cell);
-
-      if (numAlive === 2) {
-        // Living cell remains living, dead cell remains dead
-        cell.nextAlive = cell.alive;
-      } else if (numAlive === 3) {
-        // Dead cell becomes living, living cell remains living
-        cell.nextAlive = true;
-      } else {
-        // Living cell dies, dead cell remains dead
-        cell.nextAlive = false;
-      }
+      const aliveNeighbors = this.countLivingNeighbors(cell);
+      cell.liveAndLetDie(aliveNeighbors);
     });
 
-    this.forEachCell((cell) => {
-      cell.alive = cell.nextAlive;
-    });
+    this.forEachCell((cell) => cell.update());
   }
 
   render(context) {
