@@ -4,25 +4,33 @@
 
 These are the topics for week 1:
 
-1. [Refresher on JavaScript building blocks](https://github.com/HackYourFuture/explore/tree/main/Week3)
-   - Variables
-   - Values
-   - Statements / Expressions
-   - Operators
-   - Conditional Statements
+1. [What is programming?](https://study.hackyourfuture.net/#/programming/README)
+1. [What is JavaScript?](https://study.hackyourfuture.net/#/javascript/README)
+1. The basic building blocks
+   - [Variables](https://study.hackyourfuture.net/#/javascript/variables)
+   - [Values](https://study.hackyourfuture.net/#/javascript/values)
+   - [Statements / Expressions](https://study.hackyourfuture.net/#/javascript/statements-vs-expressions)
+   - [Operators](https://study.hackyourfuture.net/#/javascript/operators)
+   - [Conditional Statements](https://study.hackyourfuture.net/#/javascript/conditional-statements)
    - [Functions](https://study.hackyourfuture.net/#/javascript/functions)
-1. [Refresher on debuggers](https://study.hackyourfuture.net/#/tools/debuggers)
 1. [Loops](https://study.hackyourfuture.net/#/javascript/loops)
+1. [Refresher on debuggers](https://study.hackyourfuture.net/#/tools/debuggers)
 1. [Naming conventions](https://study.hackyourfuture.net/#/programming/naming-conventions)
 1. [Testing code](https://www.ministryoftesting.com/articles/e463d4ba?s_id=14519957)
    - [Assertion](https://study.hackyourfuture.net/#/testing/assertion)
+
+> From this week on we will be using the study book that is shared across all HackYourFuture chapters to explain the concepts rather than having the explanations here. You can click on each concept in the list above to go to the explanation! There are usually also extra reading links that you can go into if you need a little more help, but those are optional.
+
+> If you haven't yet, make sure to follow the [setup guide](https://github.com/HackYourFuture/explore/blob/main/SETUP.md) to have everything set up!
 
 ## Week goals
 
 All of the detailed information about every concept is in your study book. The following goal explanation will link you to the correct place to get studying. Read through the goal description once to get an idea of what you will be learning, then go through the different links and look at them in detail.
 
-Welcome to week 1 of JavaScript! Time to get coding, let's start with refreshing the things we learned during the explore module. Have a look at [week 3](https://github.com/HackYourFuture/explore/tree/main/Week3) there again to remind yourself what the following concepts mean again:
+Welcome to week 1 of JavaScript! Time to get coding, let's start with refreshing the things we learned during the explore module. 
+We want to first take a little bit of a broader look at what programming is in general before we dive into JavaScript. Have a look [here](https://study.hackyourfuture.net/#/programming/README)
 
+The most basic building blocks of programming are variables/values and operators. They allow you to create something, manipulate it, and then store it somewhere. Have a look at the following to go over the basics of this:
 - Variables
 - Values
 - Statements / Expressions
