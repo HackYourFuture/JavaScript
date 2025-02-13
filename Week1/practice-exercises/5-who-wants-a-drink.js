@@ -9,3 +9,27 @@
 
 // There are 3 different types of drinks:
 const drinkTypes = ['cola', 'lemonade', 'water'];
+
+const drinkTray = [];
+
+while(drinkTray.length < 5){
+    let randomDrink = drinkTypes[Math.floor(Math.random() * 3)];
+
+    if(checkForDrink(randomDrink) < 2){
+        drinkTray.push(randomDrink);
+    }
+}
+
+console.log(`Hey guys, I brought a ${drinkTray.join(", ")}!`);
+
+function checkForDrink(drink){
+    let drinkCounter = 0;
+
+    for(let drinks in drinkTray){
+        if(drinkTray[drinks] == drink){
+            drinkCounter++;
+        }
+    }
+
+    return drinkCounter;
+}
