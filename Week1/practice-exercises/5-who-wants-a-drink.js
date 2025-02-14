@@ -13,7 +13,7 @@ const drinkTypes = ['cola', 'lemonade', 'water'];
 const drinkTray = [];
 
 while(drinkTray.length < 5){
-    let randomDrink = drinkTypes[Math.floor(Math.random() * 3)];
+    let randomDrink = drinkTypes[Math.round(Math.random() * 3)];
 
     if(checkForDrink(randomDrink) < 2){
         drinkTray.push(randomDrink);
