@@ -3,7 +3,7 @@ import { modules, students, mentors, classes } from "./hyf.js";
 /**
  * We would like to have a list of everyone that is currently participating in a class.
  * This means the students, but also the mentors that are currently teaching the class.
- * The students should be self explanatory, but to find the mentors you will need to follow these steps:
+ * The students should be self-explanatory, but to find the mentors you will need to follow these steps:
  * - Check what the `currentModule` of the class is
  * - Find the mentor(s) that are `nowTeaching` that module
  *
@@ -13,9 +13,10 @@ import { modules, students, mentors, classes } from "./hyf.js";
  */
 const getPeopleOfClass = (className) => {
   // TODO complete this function
+    return students.filter(x => x.class.includes(className)).filter(y => y.graduated !== true).map(({ gitHubName, graduated, ...rest }) => rest);
 };
 // You can uncomment out this line to try your function
-// console.log(getPeopleOfClass('class34'));
+console.log(getPeopleOfClass('class34'));
 
 /**
  * We would like to have a complete overview of the current active classes.
@@ -31,6 +32,12 @@ const getPeopleOfClass = (className) => {
  */
 const getActiveClasses = () => {
   // TODO complete this function
+    let activeClassesList = classes.filter(x => x.active === true).map(x => x.name);
+    let pplOfClass = activeClassesList.map(x => getPeopleOfClass(x));
+    return pplOfClass.filter(x => x.length > 0);
+
 };
 // You can uncomment out this line to try your function
 // console.log(getActiveClasses());
+
+console.log(getActiveClasses());
