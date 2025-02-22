@@ -1,5 +1,7 @@
 "use strict";
 
+/* this is not my code. I found it on internet and the help og copilot and chatGPT but i didnt understand it at all. i put it here to make it obvious.  */
+
 function runExperiment(sampleSize) {
   const valueCounts = [0, 0, 0, 0, 0, 0];
 
