@@ -21,3 +21,10 @@ const passwordList = [
     { times: '1-3', letter: 'b', password: 'cdefg'},
     { times: '2-9', letter: 'c', password: 'ccccccccc'}
 ];
+passwordList.forEach(item => {
+    const [ min, max] = item.times.split("-").map(Number);
+    const leetterCount = item.password.split("").filter(char => char === item.letter).length;
+    const isValid = leetterCount >= min && leetterCount <= max;
+
+    console.log(`Password '${item.password}' is ${isValid? "VALID" : "INVALID"}`);
+})
