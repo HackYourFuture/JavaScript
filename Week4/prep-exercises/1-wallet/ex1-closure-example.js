@@ -29,15 +29,10 @@ function createWallet(name, cash = 0) {
     return amount;
   }
 
-  function transferInto(wallet, amount) {
-    console.log(
-      `Transferring ${eurosFormatter.format(
-        amount
-      )} from ${name} to ${wallet.getName()}`
-    );
-    const withdrawnAmount = withdraw(amount);
-    wallet.deposit(withdrawnAmount);
+   function resetDailyAllowance() {
+    dayTotalWithdrawals = 0;
   }
+
 
   function setDailyAllowance(newAllowance) {
     dailyAllowance = newAllowance;
@@ -46,15 +41,11 @@ function createWallet(name, cash = 0) {
     );
   }
 
-  function resetDailyAllowance() {
-    dayTotalWithdrawals = 0;
-  }
 
   function reportBalance() {
     console.log(`Name: ${name}, balance: ${eurosFormatter.format(cash)}`);
   }
 
-  const getName = () => name;
 
   return {
     deposit,
