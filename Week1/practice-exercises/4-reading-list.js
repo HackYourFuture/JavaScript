@@ -9,3 +9,19 @@
  *  If you haven't read it log a string like You still need to read "The Lord of the Rings"
  */
 
+let books = [
+    { title: 'the Hobbit', author: 'J.R.R. Tolkien', alreadyRead: true },
+    { title: 'the Lord of the Rings', author: 'J.R.R. Tolkien', alreadyRead: false },
+    { title: 'Harry Potter and the Sorcerer\'s Stone', author: 'J.K. Rowling', alreadyRead: true }
+];
+
+for(let book of books) {
+
+    console.log(`${book.title} by ${book.author}`);
+
+    if(book.alreadyRead) {
+        console.log(`You already read "${book.title}".`);
+    } else {
+        console.log(`You still need to read "${book.title}".`);
+    }
+}
