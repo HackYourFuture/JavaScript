@@ -1,3 +1,14 @@
+<<<<<<< HEAD
+# Prep exercise - Traffic light
+
+In the previous week we started with our traffic light. Now that we also know what a function is we have one last look at the workings of a traffic light in a different way. Take a look at the `traffic-light.js` file and implement the same requirements as last week again, but then with another different way of organising.
+
+## Things to think about
+
+- This time the loop was changed to a for loop that will run the code 6 times. Why was that needed?
+- Why was the trafficLight added to the `main` function and not left at the top of the file?
+- What do you think is the advantage of having the `getCurrentTrafficLightState` and `getNextStateIndex` functions?
+=======
 > If you are following the HackYourFuture curriculum we recommend you to start with module 1: [HTML/CSS/GIT](https://github.com/HackYourFuture/HTML-CSS). To get a complete overview of the HackYourFuture curriculum first, click [here](https://github.com/HackYourFuture/curriculum).
 
 > Please help us improve and share your feedback! If you find better tutorials
@@ -91,3 +102,4 @@ If you feel ready for the next challenge, click [here](https://www.github.com/Ha
 _The HackYourFuture curriculum is subject to CC BY copyright. This means you can freely use our materials, but just make sure to give us credit for it :)_
 
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+>>>>>>> origin/main
