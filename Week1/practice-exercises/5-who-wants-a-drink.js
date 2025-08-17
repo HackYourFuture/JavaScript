@@ -9,3 +9,31 @@
 
 // There are 3 different types of drinks:
 const drinkTypes = ['cola', 'lemonade', 'water'];
+
+const drinkTray = [];
+
+//counter for do - while loop
+let counter = {
+    'cola': 0,
+    'lemonade': 0,
+    'water': 0
+}
+
+//loop according task
+for (let i = 0; i < 5; i++) {
+    let randomItem;
+
+    //take 1 random drink
+    do {
+        let randomIndex = Math.floor(Math.random() * drinkTypes.length);
+        randomItem = drinkTypes[randomIndex];      
+
+        // 2 item max 
+    } while (counter[randomItem] >= 2);
+
+    drinkTray.push(randomItem);
+
+    counter[randomItem] ++ ;
+}
+
+console.log(`Hey guys, I brought a ${drinkTray.join(', ')}!`);

@@ -7,3 +7,12 @@
  *  If it's even, log to the console The number [PUT_NUMBER_HERE] is even!.
  */
 
+let num = 0;
+while (num <= 20) {
+  if (num % 2 == 0) {
+    console.log(`The number ${num} is even!`);
+  } else {
+    console.log(`The number ${num} is odd!`);
+  };
+  num ++ ;
+}
