@@ -12,7 +12,7 @@ Watch the video (by clicking the image) or go through the following walk-through
 
 ### 1.1 One Time Only (start of every module)
 
-1. Create a [fork](https://help.github.com/en/articles/fork-a-repo) of the assignment module repository. For JavaScript (as well as the next 2 modules), the assignment module repository is `https://www.github.com/HackYourAssignment/Assignment-cohortXX` where XX is your cohort number. You do this by using the `fork` option on the top right.
+1. Create a [fork](https://help.github.com/en/articles/fork-a-repo) of the assignment module repository. For JavaScript (as well as the next 2 modules), the assignment module repository is `https://www.github.com/HackYourAssignment/JavaScript-cohortXX` where XX is your cohort number. You do this by using the `fork` option on the top right.
 2. Navigate to the URL of the cloned repository (it should be in your personal GitHub account, under "repositories").
 3. Clone the repository, using SSH<sup>[1]</sup>, to your local machine. You can do this by typing in `git clone <git url>` in the command line.
 4. On your local machine, navigate to the folder using the command line.
@@ -27,7 +27,7 @@ Watch the video (by clicking the image) or go through the following walk-through
 4. Once you're finished, add your assignment to a commit. There will be some test and config files added by the test runner, this is expected and should be added!
 5. Create the commit (`git commit`). Make the commit message meaningful, for example `Finished project for assignment week 3`.
 6. Push the branch to your forked repository.
-7. On the GitHub page of your forked repository, click on the `create pull request` button. Make sure the `base repository` is the `Assignment-cohortXX` repository, on branch `main`.
+7. On the GitHub page of your forked repository, click on the `create pull request` button. Make sure the `base repository` is the `JavaScript-cohortXX` repository, on branch `main`.
 8. Give the pull request a title in the same format as you used for the branch, e.g: `YOUR_NAME-w3-JavaScript`.
 9. Submit the pull request from your forked repository branch into the `main` branch of the destination repository.
 
